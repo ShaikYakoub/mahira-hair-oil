@@ -66,9 +66,11 @@ export default function AboutPage() {
             Our Philosophy
           </h2>
           <div className="flex justify-center mb-8">
-            <img
+            <Image
               src="/svgs/hand-drawn-divider.svg"
               alt="divider"
+              width={48}
+              height={32}
               className="h-6 md:h-8"
             />
           </div>

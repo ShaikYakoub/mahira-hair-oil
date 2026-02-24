@@ -1,10 +1,8 @@
 "use client";
-import type { Metadata } from "next";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Image from "next/image";
 import Hero from "@/components/Hero";
 import TrustStrip from "@/components/TrustStrip";
-// ...existing imports above...
-import { useEffect, useRef } from "react";
 function TestimonialsSlider() {
   const testimonials = [
     {
@@ -75,7 +73,7 @@ function TestimonialsSlider() {
   const cards = [...testimonials, ...testimonials];
   const cardWidth = 340; // px, matches min-w-[320px] + gap
   useEffect(() => {
-    let animationFrame;
+    let animationFrame: number;
     function animate() {
       setOffset((prev) => {
         const next = prev + 0.5;
@@ -115,9 +113,11 @@ function TestimonialsSlider() {
             className="bg-[#f9f3e7] border-2 border-gold/60 rounded-2xl shadow-gold/10 shadow-lg flex flex-col items-center p-8 font-serif w-full max-w-xs min-w-[260px] md:min-w-[320px] transition-all duration-300"
             style={{ flex: "0 0 auto" }}
           >
-            <img
+            <Image
               src={t.img}
               alt={t.name}
+              width={80}
+              height={80}
               className="w-20 h-20 rounded-full border-2 border-gold/40 mb-4 object-cover"
             />
             <div className="text-brown text-lg md:text-xl text-center mb-4 italic">
@@ -161,9 +161,11 @@ export default function Home() {
             Product Usage Ritual
           </h2>
           <div className="flex justify-center mb-8">
-            <img
+            <Image
               src="/svgs/hand-drawn-divider.svg"
               alt="divider"
+              width={48}
+              height={32}
               className="h-6 md:h-8"
             />
           </div>

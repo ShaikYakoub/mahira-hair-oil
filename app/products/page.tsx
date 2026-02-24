@@ -9,7 +9,7 @@ import FadeIn from "@/components/FadeIn";
 export const metadata: Metadata = {
   title: "Products",
   description:
-    "Explore Mahira's herbal hair oil and shampoo prepared using traditional Ayurvedic methods.",
+    "Explore Mahira&apos;s herbal hair oil and shampoo prepared using traditional Ayurvedic methods.",
 };
 
 const productSchema = {
@@ -33,9 +33,9 @@ export default function ProductsPage() {
         heading={<>Our Products</>}
         subheading={
           <>
-            Discover Mahira's handcrafted Ayurvedic hair oil and shampoo, made
-            in small batches using traditional village methods and pure, local
-            ingredients.
+            Discover Mahira&apos;s handcrafted Ayurvedic hair oil and shampoo,
+            made in small batches using traditional village methods and pure,
+            local ingredients.
           </>
         }
         rightImage="/images/hair-oil-500ml.png"
@@ -215,9 +215,11 @@ export default function ProductsPage() {
         <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-8">
           {/* Ingredient cards with images and traditional descriptions */}
           <div className="flex flex-col items-center bg-[#f9f3e7] border border-gold/30 rounded-xl p-4 shadow-sm">
-            <img
+            <Image
               src="/images/amla.jpg"
               alt="Amla"
+              width={80}
+              height={80}
               className="w-20 h-20 object-cover rounded-full mb-3 border border-gold/30"
             />
             <div className="font-serif text-lg text-brown mb-1">Amla</div>
@@ -227,9 +229,11 @@ export default function ProductsPage() {
             </div>
           </div>
           <div className="flex flex-col items-center bg-[#f9f3e7] border border-gold/30 rounded-xl p-4 shadow-sm">
-            <img
+            <Image
               src="/images/hibiscus.jpg"
               alt="Hibiscus"
+              width={80}
+              height={80}
               className="w-20 h-20 object-cover rounded-full mb-3 border border-gold/30"
             />
             <div className="font-serif text-lg text-brown mb-1">Hibiscus</div>
@@ -239,9 +243,11 @@ export default function ProductsPage() {
             </div>
           </div>
           <div className="flex flex-col items-center bg-[#f9f3e7] border border-gold/30 rounded-xl p-4 shadow-sm">
-            <img
+            <Image
               src="/images/neem.png"
               alt="Neem"
+              width={80}
+              height={80}
               className="w-20 h-20 object-cover rounded-full mb-3 border border-gold/30"
             />
             <div className="font-serif text-lg text-brown mb-1">Neem</div>
@@ -251,9 +257,11 @@ export default function ProductsPage() {
             </div>
           </div>
           <div className="flex flex-col items-center bg-[#f9f3e7] border border-gold/30 rounded-xl p-4 shadow-sm">
-            <img
+            <Image
               src="/images/aloe.jpg"
               alt="Aloe Vera"
+              width={80}
+              height={80}
               className="w-20 h-20 object-cover rounded-full mb-3 border border-gold/30"
             />
             <div className="font-serif text-lg text-brown mb-1">Aloe Vera</div>
@@ -262,9 +270,11 @@ export default function ProductsPage() {
             </div>
           </div>
           <div className="flex flex-col items-center bg-[#f9f3e7] border border-gold/30 rounded-xl p-4 shadow-sm">
-            <img
+            <Image
               src="/images/coconut.jpg"
               alt="Coconut"
+              width={80}
+              height={80}
               className="w-20 h-20 object-cover rounded-full mb-3 border border-gold/30"
             />
             <div className="font-serif text-lg text-brown mb-1">Coconut</div>
@@ -274,9 +284,11 @@ export default function ProductsPage() {
             </div>
           </div>
           <div className="flex flex-col items-center bg-[#f9f3e7] border border-gold/30 rounded-xl p-4 shadow-sm">
-            <img
+            <Image
               src="/images/fenugreek.png"
               alt="Fenugreek"
+              width={80}
+              height={80}
               className="w-20 h-20 object-cover rounded-full mb-3 border border-gold/30"
             />
             <div className="font-serif text-lg text-brown mb-1">Fenugreek</div>
