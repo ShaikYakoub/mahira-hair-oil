@@ -300,6 +300,15 @@ export default function ProductsPage() {
       </section>
 
       <section className="py-16 md:py-20 px-6 bg-[#f7ecd7] border-b-4 border-gold/30">
+        <div className="flex justify-center mb-8">
+          <Image
+            src="/images/traditional-divider.svg"
+            alt="divider"
+            width={120}
+            height={24}
+            className="h-6 md:h-8"
+          />
+        </div>
         <h2 className="text-3xl md:text-4xl font-serif text-brown text-center mb-6">
           How To Use
         </h2>

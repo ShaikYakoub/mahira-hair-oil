@@ -85,17 +85,17 @@ function TestimonialsSlider() {
     return () => cancelAnimationFrame(animationFrame);
   }, [cards.length, cardWidth]);
   return (
-    <div className="relative overflow-hidden w-full">
+    <div className="relative overflow-hidden w-full sm:max-w-3xl md:max-w-4xl mx-auto">
       {/* Left fade */}
       <div
-        className="pointer-events-none absolute left-0 top-0 h-full w-16 md:w-24 z-10"
+        className="pointer-events-none absolute left-0 top-0 h-full w-8 sm:w-12 md:w-24 z-10"
         style={{
           background: "linear-gradient(to right, #f7ecd7 80%, transparent)",
         }}
       />
       {/* Right fade */}
       <div
-        className="pointer-events-none absolute right-0 top-0 h-full w-16 md:w-24 z-10"
+        className="pointer-events-none absolute right-0 top-0 h-full w-8 sm:w-12 md:w-24 z-10"
         style={{
           background: "linear-gradient(to left, #f7ecd7 80%, transparent)",
         }}
@@ -110,7 +110,7 @@ function TestimonialsSlider() {
         {cards.map((t, i) => (
           <div
             key={i}
-            className="bg-[#f9f3e7] border-2 border-gold/60 rounded-2xl shadow-gold/10 shadow-lg flex flex-col items-center p-8 font-serif w-full max-w-xs min-w-[260px] md:min-w-[320px] transition-all duration-300"
+            className="bg-[#f9f3e7] border-2 border-gold/60 rounded-2xl shadow-gold/10 shadow-lg flex flex-col items-center p-4 font-serif w-full max-w-xs min-w-[70vw] sm:min-w-[220px] sm:max-w-[180px] transition-all duration-300"
             style={{ flex: "0 0 auto" }}
           >
             <Image
@@ -162,10 +162,10 @@ export default function Home() {
           </h2>
           <div className="flex justify-center mb-8">
             <Image
-              src="/svgs/hand-drawn-divider.svg"
+              src="/images/traditional-divider.svg"
               alt="divider"
-              width={48}
-              height={32}
+              width={120}
+              height={24}
               className="h-6 md:h-8"
             />
           </div>

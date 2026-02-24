@@ -67,10 +67,10 @@ export default function AboutPage() {
           </h2>
           <div className="flex justify-center mb-8">
             <Image
-              src="/svgs/hand-drawn-divider.svg"
+              src="/images/traditional-divider.svg"
               alt="divider"
-              width={48}
-              height={32}
+              width={120}
+              height={24}
               className="h-6 md:h-8"
             />
           </div>
