@@ -22,3 +22,31 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f4e6d4;
+}
+::-webkit-scrollbar-thumb {
+  background: #C49A3A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6B4F3A;
+}
+
+/* Infinite ingredient scroll */
+@keyframes ingredient-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-ingredient-scroll {
+  animation: ingredient-scroll 35s linear infinite;
+}
+.animate-ingredient-scroll:hover {
+  animation-play-state: paused;
+}

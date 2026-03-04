@@ -91,7 +91,7 @@ export default function ProductsPage() {
                 href="https://wa.me/919876543210?text=Hi%20I%20want%20to%20order%20Mahira%20Hair%20Oil%20200ml"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-mutedGreen text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition"
+                className="inline-block bg-mutedGreen text-white px-4 py-2 text-sm md:px-8 md:py-3 rounded-full font-semibold hover:opacity-90 transition"
               >
                 Order on WhatsApp
               </a>
@@ -100,7 +100,7 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* Herbal Hair Oil – 500ml */}
+      {/* Herbal Hair Oil – 500ml */
       <section className="py-16 md:py-24 bg-[#F8EFE3] border-b-4 border-gold/30">
         <div className="max-w-5xl mx-auto px-6">
           <div className="w-full">
@@ -143,7 +143,7 @@ export default function ProductsPage() {
                 href="https://wa.me/919876543210?text=Hi%20I%20want%20to%20order%20Mahira%20Hair%20Oil%20500ml"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-mutedGreen text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition"
+                className="inline-block bg-mutedGreen text-white px-4 py-2 text-sm md:px-8 md:py-3 rounded-full font-semibold hover:opacity-90 transition"
               >
                 Order on WhatsApp
               </a>
@@ -152,7 +152,7 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* Herbal Shampoo – 100ml */}
+      {/* Herbal Shampoo – 100ml */
       <section className="py-16 md:py-24 border-b-4 border-gold/30">
         <div className="max-w-5xl mx-auto px-6">
           <div className="w-full">
@@ -195,7 +195,7 @@ export default function ProductsPage() {
                 href="https://wa.me/919876543210?text=Hi%20I%20want%20to%20order%20Mahira%20Herbal%20Shampoo"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-mutedGreen text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition"
+                className="inline-block bg-mutedGreen text-white px-4 py-2 text-sm md:px-8 md:py-3 rounded-full font-semibold hover:opacity-90 transition"
               >
                 Order on WhatsApp
               </a>
@@ -212,89 +212,32 @@ export default function ProductsPage() {
           “Each drop is a hymn to nature—herbs gathered at dawn, prepared with
           reverence.”
         </p>
-        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-8">
-          {/* Ingredient cards with images and traditional descriptions */}
-          <div className="flex flex-col items-center bg-[#f9f3e7] border border-gold/30 rounded-xl p-4 shadow-sm">
-            <Image
-              src="/images/amla.jpg"
-              alt="Amla"
-              width={80}
-              height={80}
-              className="w-20 h-20 object-cover rounded-full mb-3 border border-gold/30"
-            />
-            <div className="font-serif text-lg text-brown mb-1">Amla</div>
-            <div className="text-deepBrown text-sm text-center">
-              The sacred fruit, revered for centuries to strengthen and nourish
-              hair roots.
-            </div>
-          </div>
-          <div className="flex flex-col items-center bg-[#f9f3e7] border border-gold/30 rounded-xl p-4 shadow-sm">
-            <Image
-              src="/images/hibiscus.jpg"
-              alt="Hibiscus"
-              width={80}
-              height={80}
-              className="w-20 h-20 object-cover rounded-full mb-3 border border-gold/30"
-            />
-            <div className="font-serif text-lg text-brown mb-1">Hibiscus</div>
-            <div className="text-deepBrown text-sm text-center">
-              The flower of beauty, cooling and soothing, bestowing shine and
-              softness.
-            </div>
-          </div>
-          <div className="flex flex-col items-center bg-[#f9f3e7] border border-gold/30 rounded-xl p-4 shadow-sm">
-            <Image
-              src="/images/neem.png"
-              alt="Neem"
-              width={80}
-              height={80}
-              className="w-20 h-20 object-cover rounded-full mb-3 border border-gold/30"
-            />
-            <div className="font-serif text-lg text-brown mb-1">Neem</div>
-            <div className="text-deepBrown text-sm text-center">
-              The ancient purifier, calming the scalp and keeping hair healthy
-              and clear.
-            </div>
-          </div>
-          <div className="flex flex-col items-center bg-[#f9f3e7] border border-gold/30 rounded-xl p-4 shadow-sm">
-            <Image
-              src="/images/aloe.jpg"
-              alt="Aloe Vera"
-              width={80}
-              height={80}
-              className="w-20 h-20 object-cover rounded-full mb-3 border border-gold/30"
-            />
-            <div className="font-serif text-lg text-brown mb-1">Aloe Vera</div>
-            <div className="text-deepBrown text-sm text-center">
-              The cooling balm, hydrating and soothing for lustrous, soft hair.
-            </div>
-          </div>
-          <div className="flex flex-col items-center bg-[#f9f3e7] border border-gold/30 rounded-xl p-4 shadow-sm">
-            <Image
-              src="/images/coconut.jpg"
-              alt="Coconut"
-              width={80}
-              height={80}
-              className="w-20 h-20 object-cover rounded-full mb-3 border border-gold/30"
-            />
-            <div className="font-serif text-lg text-brown mb-1">Coconut</div>
-            <div className="text-deepBrown text-sm text-center">
-              The nourishing oil, cherished in every home for deep conditioning
-              and strength.
-            </div>
-          </div>
-          <div className="flex flex-col items-center bg-[#f9f3e7] border border-gold/30 rounded-xl p-4 shadow-sm">
-            <Image
-              src="/images/fenugreek.png"
-              alt="Fenugreek"
-              width={80}
-              height={80}
-              className="w-20 h-20 object-cover rounded-full mb-3 border border-gold/30"
-            />
-            <div className="font-serif text-lg text-brown mb-1">Fenugreek</div>
-            <div className="text-deepBrown text-sm text-center">
-              The golden seed, lending body and resilience to every strand.
-            </div>
+        <div className="overflow-hidden w-full">
+          <div className="flex gap-5 w-max animate-ingredient-scroll">
+            {[
+              { src: "/images/amla.jpg", name: "Amla", desc: "The sacred fruit, revered for centuries to strengthen and nourish hair roots." },
+              { src: "/images/hibiscus.jpg", name: "Hibiscus", desc: "The flower of beauty, cooling and soothing, bestowing shine and softness." },
+              { src: "/images/neem.png", name: "Neem", desc: "The ancient purifier, calming the scalp and keeping hair healthy and clear." },
+              { src: "/images/aloe.jpg", name: "Aloe Vera", desc: "The cooling balm, hydrating and soothing for lustrous, soft hair." },
+              { src: "/images/coconut.jpg", name: "Coconut", desc: "The nourishing oil, cherished in every home for deep conditioning and strength." },
+              { src: "/images/fenugreek.png", name: "Fenugreek", desc: "The golden seed, lending body and resilience to every strand." },
+              { src: "/images/amla.jpg", name: "Amla", desc: "The sacred fruit, revered for centuries to strengthen and nourish hair roots." },
+              { src: "/images/hibiscus.jpg", name: "Hibiscus", desc: "The flower of beauty, cooling and soothing, bestowing shine and softness." },
+              { src: "/images/neem.png", name: "Neem", desc: "The ancient purifier, calming the scalp and keeping hair healthy and clear." },
+              { src: "/images/aloe.jpg", name: "Aloe Vera", desc: "The cooling balm, hydrating and soothing for lustrous, soft hair." },
+              { src: "/images/coconut.jpg", name: "Coconut", desc: "The nourishing oil, cherished in every home for deep conditioning and strength." },
+              { src: "/images/fenugreek.png", name: "Fenugreek", desc: "The golden seed, lending body and resilience to every strand." },
+            ].map((ing, i) => (
+              <div key={i} className="w-44 flex-shrink-0 flex flex-col bg-[#f9f3e7] border border-gold/30 rounded-xl overflow-hidden shadow-sm">
+                <div className="relative aspect-[16/9] w-full">
+                  <Image src={ing.src} alt={ing.name} fill className="object-cover" />
+                </div>
+                <div className="p-3">
+                  <div className="font-serif text-base text-brown mb-1">{ing.name}</div>
+                  <div className="text-deepBrown text-xs leading-snug">{ing.desc}</div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

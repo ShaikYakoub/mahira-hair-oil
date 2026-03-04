@@ -52,6 +52,10 @@ export const metadata: Metadata = {
       "Traditional Ayurvedic hair oil and shampoo crafted naturally.",
     images: ["/images/story-garden-hero.png"],
   },
+  icons: {
+    icon: "/images/logo.svg",
+    shortcut: "/images/logo.svg",
+  },
 };
 
 export default function RootLayout({

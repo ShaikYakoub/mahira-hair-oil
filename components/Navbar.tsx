@@ -1,14 +1,35 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import Image from "next/image";
+import { useState, useRef, useEffect } from "react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(event.target as Node)
+      ) {
+        setMenuOpen(false);
+      }
+    }
+    if (menuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuOpen]);
+
   return (
     <header className="sticky top-0 z-40 bg-beige/95 border-b border-[#d8c3ad] backdrop-blur-sm">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="text-xl font-serif text-brown tracking-wide">
-          MAHIRA
+        <Link href="/" className="flex items-center gap-2">
+          <Image src="/images/logo.svg" alt="Mahira" width={36} height={36} />
+          <span className="text-xl font-serif text-brown tracking-wide">MAHIRA</span>
         </Link>
         {/* Hamburger button for mobile */}
         <button
@@ -48,7 +69,7 @@ export default function Navbar() {
         </div>
         {/* Mobile menu */}
         {menuOpen && (
-          <div className="absolute top-full left-0 w-full bg-beige border-b border-[#d8c3ad] shadow-lg md:hidden animate-fadeIn z-50">
+          <div ref={mobileMenuRef} className="absolute top-full left-0 w-full bg-beige border-b border-[#d8c3ad] shadow-lg md:hidden animate-fadeIn z-50">
             <div className="flex flex-col items-center gap-4 py-6 text-base font-medium text-deepBrown">
               <Link
                 href="/"
