@@ -28,7 +28,13 @@ export default function Navbar() {
     <header className="sticky top-0 z-40 bg-beige/95 border-b border-[#d8c3ad] backdrop-blur-sm">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/">
-          <Image src="/images/logo.svg" alt="Mahira" width={72} height={52} style={{ border: '4px solid #b6873c' }} />
+          <Image
+            src="/images/logo.svg"
+            alt="Mahira"
+            width={72}
+            height={52}
+            style={{ border: "4px solid #b6873c" }}
+          />
         </Link>
         {/* Hamburger button for mobile */}
         <button
