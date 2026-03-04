@@ -136,13 +136,29 @@ const individualProducts: Product[] = [
   },
   {
     id: "shampoo-regular",
-    name: "Regular Herbal Shampoo – 100ml",
+    name: "Mahira Herbal Shampoo – 200ml",
     image: "/images/shampoo-100ml.png",
     price: 359,
     mrp: 399,
     discount: "10% OFF",
     description:
       "Gentle daily cleanser that removes buildup without stripping natural oils.",
+    keyIngredients: ["Reetha", "Shikakai", "Amla", "Rosemary"],
+    benefits: [
+      "Cleanses scalp gently",
+      "Maintains natural moisture balance",
+      "Leaves hair soft and manageable",
+      "Suitable for frequent use",
+    ],
+  },
+  {
+    id: "shampoo-100",
+    name: "Mahira Herbal Shampoo – 100ml",
+    image: "/images/shampoo-100ml.png",
+    price: 199,
+    mrp: 249,
+    discount: "20% OFF",
+    description: "Gentle daily cleanser in a smaller pack.",
     keyIngredients: ["Reetha", "Shikakai", "Amla", "Rosemary"],
     benefits: [
       "Cleanses scalp gently",
@@ -185,26 +201,10 @@ const individualProducts: Product[] = [
       "Adds natural softness",
     ],
   },
-  {
-    id: "onion-shampoo",
-    name: "Onion Herbal Shampoo – 100ml",
-    image: "/images/onion-hair-oil.png",
-    price: 314,
-    mrp: 349,
-    discount: "10% OFF",
-    description:
-      "Balanced cleanser with onion and herbs for scalp care and anti-hairfall support.",
-    keyIngredients: ["Reetha", "Shikakai", "Onion", "Kalonji"],
-    benefits: [
-      "Cleanses while protecting scalp",
-      "Supports hair fall control",
-      "Helps maintain scalp comfort",
-      "Leaves hair fresh and clean",
-    ],
-  },
+  // ...removed Onion Herbal Shampoo...
   {
     id: "neem-shampoo",
-    name: "Neem Herbal Shampoo – 100ml",
+    name: "Neem Herbal Shampoo – 200ml",
     image: "/images/neem-shampoo.png",
     price: 314,
     mrp: 349,
@@ -229,7 +229,7 @@ const comboOffers = [
     mrp: 1499,
     note: "Sold at MRP",
     description:
-      "Includes 500ml Hair Oil and a complimentary 200ml Regular Shampoo.",
+      "Includes 500ml Hair Oil and a complimentary 200ml Mahira Herbal Shampoo.",
     link: "https://wa.me/919876543210?text=Hi%20I%20want%20to%20order%20Mahira%20Hair%20Oil%20500ml%20Combo",
   },
   {
@@ -239,7 +239,7 @@ const comboOffers = [
     mrp: 599,
     note: "Sold at MRP",
     description:
-      "Includes 200ml Hair Oil and a complimentary 100ml Regular Shampoo.",
+      "Includes 200ml Hair Oil and a complimentary 100ml Mahira Herbal Shampoo.",
     link: "https://wa.me/919876543210?text=Hi%20I%20want%20to%20order%20Mahira%20Hair%20Oil%20200ml%20Combo",
   },
 ];
@@ -258,7 +258,71 @@ export default function ProductsPage() {
         }
         rightImage="/images/hair-oil-500ml.png"
         rightAlt="Mahira Herbal Hair Oil 500ml"
-      />
+      >
+        {/* No View Products button on products page */}
+        <a
+          href="https://wa.me/919876543210?text=Hi%20I%20want%20to%20order%20Mahira%20products"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-mutedGreen text-white px-8 py-4 rounded-full font-semibold hover:opacity-90 transition"
+        >
+          Order on WhatsApp
+        </a>
+      </Hero>
+
+      <section className="py-16 md:py-20 px-6 bg-[#f7ecd7] border-b-4 border-gold/30">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-serif text-brown text-center mb-4">
+            Combo Offers
+          </h2>
+          <div className="w-24 h-1 bg-gold mx-auto mb-6" />
+          <p className="text-center text-base font-semibold text-deepBrown mb-10">
+            Combo offers are sold at MRP.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {comboOffers.map((combo) => (
+              <div
+                key={combo.id}
+                className="bg-[#F8EFE3] border border-gold/30 rounded-2xl overflow-hidden shadow-md flex flex-col hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="relative w-full aspect-[4/3] bg-white border-b border-gold/20">
+                  <Image
+                    src={combo.image}
+                    alt={combo.name}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-4 md:p-6 flex flex-col flex-grow">
+                  <h3 className="text-xl font-serif text-brown text-center mb-2">
+                    {combo.name}
+                  </h3>
+                  <div className="flex justify-center items-center gap-2 mb-3">
+                    <span className="text-2xl font-bold text-green-800">
+                      ₹{combo.mrp}
+                    </span>
+                    <span className="text-xs font-bold text-brown bg-gold/20 px-2 py-1 rounded-full">
+                      {combo.note}
+                    </span>
+                  </div>
+                  <div className="bg-[#F8EFE3] border border-gold/50 rounded-md p-2 mb-4 text-center text-sm text-deepBrown">
+                    {combo.description}
+                  </div>
+                  <a
+                    href={combo.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full text-center bg-mutedGreen text-white py-3 rounded-full font-semibold hover:opacity-90 transition mt-auto"
+                  >
+                    Order Combo on WhatsApp
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <script
         type="application/ld+json"
@@ -289,17 +353,6 @@ export default function ProductsPage() {
                 />
               </div>
               <div className="flex-1">
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="text-2xl font-bold text-green-800">
-                    ₹{product.price}
-                  </span>
-                  <span className="text-sm line-through text-gray-500">
-                    ₹{product.mrp}
-                  </span>
-                  <span className="bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-full">
-                    {product.discount}
-                  </span>
-                </div>
                 <p className="text-deepBrown text-base md:text-lg mb-4">
                   {product.description}
                 </p>
@@ -322,71 +375,32 @@ export default function ProductsPage() {
                   ))}
                 </ul>
 
-                <a
-                  href={`https://wa.me/919876543210?text=Hi%20I%20want%20to%20order%20${encodeURIComponent(product.name)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-mutedGreen text-white px-4 py-2 text-sm md:px-8 md:py-3 rounded-full font-semibold hover:opacity-90 transition"
-                >
-                  Order on WhatsApp
-                </a>
+                <div className="flex flex-wrap items-center gap-3 justify-between">
+                  <div className="flex items-center gap-2">
+                    <span className="text-2xl font-bold text-green-800">
+                      ₹{product.price}
+                    </span>
+                    <span className="text-sm line-through text-gray-500">
+                      ₹{product.mrp}
+                    </span>
+                    <span className="bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-full">
+                      {product.discount}
+                    </span>
+                  </div>
+                  <a
+                    href={`https://wa.me/919876543210?text=Hi%20I%20want%20to%20order%20${encodeURIComponent(product.name)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-mutedGreen text-white px-4 py-2 text-sm md:px-8 md:py-3 rounded-full font-semibold hover:opacity-90 transition"
+                  >
+                    Order on WhatsApp
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </section>
       ))}
-
-      <section className="py-16 md:py-20 px-6 bg-[#f7ecd7] border-b-4 border-gold/30">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif text-brown text-center mb-4">
-            Combo Offers
-          </h2>
-          <div className="w-24 h-1 bg-gold mx-auto mb-6" />
-          <p className="text-center text-base font-semibold text-deepBrown mb-10">
-            Combo offers are sold at MRP.
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {comboOffers.map((combo) => (
-              <div
-                key={combo.id}
-                className="bg-white border-2 border-gold/50 rounded-2xl p-6 shadow-md"
-              >
-                <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-gold/30 mb-4">
-                  <Image
-                    src={combo.image}
-                    alt={combo.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-serif text-brown text-center mb-2">
-                  {combo.name}
-                </h3>
-                <div className="flex justify-center items-center gap-2 mb-3">
-                  <span className="text-2xl font-bold text-green-800">
-                    ₹{combo.mrp}
-                  </span>
-                  <span className="text-xs font-bold text-brown bg-gold/20 px-2 py-1 rounded-full">
-                    {combo.note}
-                  </span>
-                </div>
-                <div className="bg-[#f9f3e7] border border-gold/40 rounded-lg p-3 text-center text-sm text-deepBrown mb-4">
-                  {combo.description}
-                </div>
-                <a
-                  href={combo.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full text-center bg-mutedGreen text-white py-3 rounded-full font-semibold hover:opacity-90 transition"
-                >
-                  Order Combo on WhatsApp
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="py-16 md:py-20 px-6 bg-[#f7ecd7] border-b-4 border-gold/30">
         <h2 className="text-3xl md:text-4xl font-serif text-brown text-center mb-6">

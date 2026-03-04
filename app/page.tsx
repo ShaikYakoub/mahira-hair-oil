@@ -245,7 +245,7 @@ const allProducts = [
   {
     id: "shampoo-regular",
     category: "Herbal Cleanser",
-    name: "Regular Herbal Shampoo – 100ml",
+    name: "Mahira Herbal Shampoo – 200ml",
     mrp: 399,
     price: 359,
     discount: "10% OFF",
@@ -253,19 +253,19 @@ const allProducts = [
     img: "/images/shampoo-100ml.png",
   },
   {
-    id: "shampoo-onion",
+    id: "shampoo-100",
     category: "Herbal Cleanser",
-    name: "Onion Herbal Shampoo – 100ml",
-    mrp: 349,
-    price: 314,
-    discount: "10% OFF",
-    offer: "Anti-Hairfall & Scalp Protect",
-    img: "/images/onion-hair-oil.png",
+    name: "Mahira Herbal Shampoo – 100ml",
+    mrp: 249,
+    price: 199,
+    discount: "20% OFF",
+    offer: "Gentle daily cleanser",
+    img: "/images/shampoo-100ml.png",
   },
   {
     id: "shampoo-neem",
     category: "Herbal Cleanser",
-    name: "Neem Herbal Shampoo – 100ml",
+    name: "Neem Herbal Shampoo – 200ml",
     mrp: 349,
     price: 314,
     discount: "10% OFF",
@@ -319,7 +319,10 @@ export default function Home() {
         </section>
       </FadeIn>
       <FadeIn>
-        <section className="py-20 md:py-28 bg-white border-b-4 border-gold/30">
+        <section
+          id="individual-products"
+          className="py-20 md:py-28 bg-[#f7ecd7] border-b-4 border-gold/30"
+        >
           <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-serif text-brown mb-4">
@@ -365,7 +368,7 @@ export default function Home() {
                         ₹{product.mrp}
                       </span>
                     </div>
-                    <div className="bg-white border border-gold/50 rounded-md p-2 mb-4 text-xs md:text-sm text-deepBrown font-medium text-center">
+                    <div className="bg-[#F8EFE3] border border-gold/50 rounded-md p-2 mb-4 text-xs md:text-sm text-deepBrown font-medium text-center">
                       Individual purchase offer
                     </div>
                     <div className="mt-auto">
@@ -433,7 +436,7 @@ export default function Home() {
                         ₹{combo.mrp}
                       </span>
                     </div>
-                    <div className="bg-white border border-gold/50 rounded-md p-2 mb-4 text-xs md:text-sm text-deepBrown font-medium text-center">
+                    <div className="bg-[#F8EFE3] border border-gold/50 rounded-md p-2 mb-4 text-xs md:text-sm text-deepBrown font-medium text-center">
                       {combo.description}
                     </div>
                     <div className="mt-auto">

@@ -86,7 +86,14 @@ export default function AboutPage() {
         }
         rightImage="/images/story-roots-sprout.jpg"
         rightAlt="Roots and Sprout - Mahira Story"
-      />
+      >
+        <a
+          href="/products"
+          className="border border-brown text-brown px-8 py-4 rounded-full font-semibold hover:bg-brown hover:text-white transition"
+        >
+          View Products
+        </a>
+      </Hero>
 
       <section className="py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-6 text-center">

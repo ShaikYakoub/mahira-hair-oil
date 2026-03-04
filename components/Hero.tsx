@@ -66,7 +66,7 @@ export default function Hero({
               </a>
 
               <a
-                href="/products"
+                href="#individual-products"
                 className="border border-brown text-brown px-8 py-4 rounded-full font-semibold hover:bg-brown hover:text-white transition"
               >
                 View Products
