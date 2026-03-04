@@ -6,12 +6,14 @@ import { useState, useRef, useEffect } from "react";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const toggleButtonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (
         mobileMenuRef.current &&
-        !mobileMenuRef.current.contains(event.target as Node)
+        !mobileMenuRef.current.contains(event.target as Node) &&
+        !toggleButtonRef.current?.contains(event.target as Node)
       ) {
         setMenuOpen(false);
       }
@@ -27,17 +29,23 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-40 bg-beige/95 border-b border-[#d8c3ad] backdrop-blur-sm">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/">
-          <Image
-            src="/images/logo.svg"
-            alt="Mahira"
-            width={72}
-            height={52}
-            style={{ border: "4px solid #b6873c" }}
-          />
-        </Link>
+        <div className="flex items-center gap-3">
+          <Link href="/">
+            <Image
+              src="/images/logo.svg"
+              alt="Mahira"
+              width={72}
+              height={52}
+              style={{ border: "4px solid #b6873c" }}
+            />
+          </Link>
+          <span className="inline-block font-serif text-base md:text-xl text-brown font-bold tracking-wide select-none">
+            Mahira Herbals
+          </span>
+        </div>
         {/* Hamburger button for mobile */}
         <button
+          ref={toggleButtonRef}
           className="md:hidden flex flex-col justify-center items-center w-10 h-10 focus:outline-none"
           aria-label="Toggle menu"
           onClick={() => setMenuOpen((open) => !open)}

@@ -1,3 +1,17 @@
+@keyframes ingredient-scroll-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.animate-ingredient-scroll-reverse {
+  animation: ingredient-scroll-reverse 35s linear infinite;
+}
+.animate-ingredient-scroll-reverse:hover {
+  animation-play-state: paused;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

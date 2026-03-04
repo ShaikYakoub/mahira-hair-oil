@@ -7,8 +7,16 @@ export default function FooterTraditional() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-3 gap-6">
         <div className="col-span-2 md:col-span-1">
           <div className="flex items-center gap-3 mb-4">
-            <Image src="/images/logo.svg" alt="Mahira" width={40} height={40} />
-            <h3 className="text-2xl font-serif">Mahira Organics</h3>
+            <Image
+              src="/images/logo.svg"
+              alt="Mahira"
+              width={72}
+              height={72}
+              style={{ border: "4px solid #b6873c" }}
+            />
+            <span className="font-serif text-xl text-gold font-bold tracking-wide select-none">
+              Mahira Herbals
+            </span>
           </div>
           <p className="text-sm opacity-90">
             Traditional Ayurvedic hair care crafted with purity and care.

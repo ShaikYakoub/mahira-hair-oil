@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Hero from "@/components/Hero";
+import IngredientsDoubleScroll from "@/components/IngredientsDoubleScroll";
 import FooterTraditional from "@/components/FooterTraditional";
 import BenefitsSectionTraditional from "@/components/BenefitsSectionTraditional";
 
@@ -8,6 +9,68 @@ export const metadata = {
   description:
     "Learn about Mahira Organics, our 29-ingredient traditional Ayurvedic roots, and our commitment to pure, handcrafted hair care.",
 };
+
+const ingredientsList = [
+  { name: "Amla", desc: "Indian Gooseberry", img: "/images/amla.jpg" },
+  {
+    name: "Fenugreek",
+    desc: "Golden seed for resilience",
+    img: "/images/fenugreek.jpg",
+  },
+  { name: "Neem", desc: "Ancient scalp purifier", img: "/images/neem.jpg" },
+  {
+    name: "Moringa",
+    desc: "Drumstick leaves for strength",
+    img: "/images/Moringa.jpg",
+  },
+  {
+    name: "Aloe Vera",
+    desc: "Cooling and hydrating balm",
+    img: "/images/aloe.jpg",
+  },
+  {
+    name: "Jatamansi",
+    desc: "Spikenard for calming",
+    img: "/images/Jatamansi.jpg",
+  },
+  {
+    name: "Bhringraj",
+    desc: "King of herbs for hair",
+    img: "/images/bhringraj.jpg",
+  },
+  {
+    name: "Rosemary",
+    desc: "Stimulates hair follicles",
+    img: "/images/rosemary.jpg",
+  },
+  {
+    name: "Haritaki",
+    desc: "Nourishes and protects",
+    img: "/images/Haritaki.jpg",
+  },
+  { name: "Henna", desc: "Natural conditioning", img: "/images/Henna.jpg" },
+  { name: "Vetiver", desc: "Cooling root extract", img: "/images/Vetiver.jpg" },
+  {
+    name: "Flax Seeds",
+    desc: "Rich in Omega-3",
+    img: "/images/Flax Seeds.jpg",
+  },
+  {
+    name: "Almonds",
+    desc: "Deep moisture and shine",
+    img: "/images/almonds.jpg",
+  },
+  {
+    name: "Hibiscus",
+    desc: "Flower of beauty and softness",
+    img: "/images/hibiscus.jpg",
+  },
+  {
+    name: "Coconut & Castor",
+    desc: "Nourishing base oils",
+    img: "/images/coconut.jpg",
+  },
+];
 
 export default function AboutPage() {
   return (
@@ -105,36 +168,11 @@ export default function AboutPage() {
           </h2>
           <div className="w-24 h-1 bg-gold mx-auto mb-6" />
           <p className="text-center text-lg font-serif italic text-brown mb-12 max-w-3xl mx-auto">
-            &ldquo;Our signature oils are born from a sacred, slow-infused blend of 29 traditional herbs. Here are the core elements we gather at dawn to bring you pure, uncompromised care.&rdquo;
+            &ldquo;Our signature oils are born from a sacred, slow-infused blend
+            of 29 traditional herbs. Here are the core elements we gather at
+            dawn to bring you pure, uncompromised care.&rdquo;
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-            {[
-              { name: "Amla", telugu: "ఉసిరి కాయలు", desc: "Indian Gooseberry", img: "/images/amla.jpg" },
-              { name: "Fenugreek", telugu: "మెంతులు", desc: "Golden seed for resilience", img: "/images/fenugreek.png" },
-              { name: "Neem", telugu: "వేపాకు", desc: "Ancient scalp purifier", img: "/images/neem.png" },
-              { name: "Moringa", telugu: "మునగ ఆకు", desc: "Drumstick leaves for strength", img: "/images/moringa.jpg" },
-              { name: "Aloe Vera", telugu: "అలోవెరా", desc: "Cooling and hydrating balm", img: "/images/aloe.jpg" },
-              { name: "Jatamansi", telugu: "జట మాంసి", desc: "Spikenard for calming", img: "/images/jatamansi.jpg" },
-              { name: "Bhringraj", telugu: "భృంగరాజ్", desc: "King of herbs for hair", img: "/images/bhringraj.jpg" },
-              { name: "Rosemary", telugu: "రోజ్ మేరీ", desc: "Stimulates hair follicles", img: "/images/rosemary.jpg" },
-              { name: "Haritaki", telugu: "హరితకి", desc: "Nourishes and protects", img: "/images/haritaki.jpg" },
-              { name: "Henna", telugu: "గోరింటాకు", desc: "Natural conditioning", img: "/images/henna.jpg" },
-              { name: "Vetiver", telugu: "వట్టి వేరు", desc: "Cooling root extract", img: "/images/vetiver.jpg" },
-              { name: "Flax Seeds", telugu: "అవిసె గింజలు", desc: "Rich in Omega-3", img: "/images/flaxseeds.jpg" },
-              { name: "Almonds", telugu: "బాదం", desc: "Deep moisture and shine", img: "/images/almonds.jpg" },
-              { name: "Hibiscus", telugu: "మందారం పువ్వులు", desc: "Flower of beauty and softness", img: "/images/hibiscus.jpg" },
-              { name: "Coconut & Castor", telugu: "కొబ్బరి నూనె + ఆముదం", desc: "Nourishing base oils", img: "/images/coconut.jpg" },
-            ].map((item, index) => (
-              <div key={index} className="flex flex-col items-center bg-[#f9f3e7] border border-gold/30 rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
-                <div className="relative w-20 h-20 mb-3">
-                  <Image src={item.img} alt={item.name} fill sizes="80px" className="object-cover rounded-full border border-gold/40" />
-                </div>
-                <div className="font-serif text-base text-brown text-center leading-tight mb-1">{item.name}</div>
-                <div className="font-serif text-xs text-gold font-medium mb-2">{item.telugu}</div>
-                <div className="text-deepBrown text-xs text-center leading-relaxed">{item.desc}</div>
-              </div>
-            ))}
-          </div>
+          <IngredientsDoubleScroll ingredients={ingredientsList} />
         </div>
       </section>
       <BenefitsSectionTraditional />
