@@ -50,7 +50,9 @@ export default function FooterTraditional() {
         <div className="order-2 md:order-none col-span-2 md:col-span-1">
           <h4 className="font-semibold mb-4">Contact</h4>
           <p className="text-sm opacity-90">+91 63044 49747</p>
-          <p className="text-sm opacity-90 mt-2">mahiraherbalhairoil@gmail.com</p>
+          <p className="text-sm opacity-90 mt-2">
+            mahiraherbalhairoil@gmail.com
+          </p>
           <div className="mt-4 flex gap-4 text-lg opacity-90">
             <a
               href="https://wa.me/916304449747"
