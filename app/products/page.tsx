@@ -1,15 +1,13 @@
 import type { Metadata } from "next";
-
 import Image from "next/image";
 import Hero from "@/components/Hero";
 import FooterTraditional from "@/components/FooterTraditional";
 import BenefitsSectionTraditional from "@/components/BenefitsSectionTraditional";
 import FadeIn from "@/components/FadeIn";
-
 export const metadata: Metadata = {
   title: "Products",
   description:
-    "Explore Mahira&apos;s herbal hair oil and shampoo prepared using traditional Ayurvedic methods.",
+    "Explore Mahira's herbal hair oil and shampoo prepared using traditional Ayurvedic methods.",
 };
 
 const productSchema = {
@@ -100,7 +98,7 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* Herbal Hair Oil – 500ml */
+      {/* Herbal Hair Oil – 500ml */}
       <section className="py-16 md:py-24 bg-[#F8EFE3] border-b-4 border-gold/30">
         <div className="max-w-5xl mx-auto px-6">
           <div className="w-full">
@@ -152,7 +150,7 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* Herbal Shampoo – 100ml */
+      {/* Herbal Shampoo – 100ml */}
       <section className="py-16 md:py-24 border-b-4 border-gold/30">
         <div className="max-w-5xl mx-auto px-6">
           <div className="w-full">

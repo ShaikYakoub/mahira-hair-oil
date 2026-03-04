@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function FooterTraditional() {
   return (
     <footer className="bg-brown text-white py-16">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-3 gap-12">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-3 gap-6">
         <div className="col-span-2 md:col-span-1">
           <div className="flex items-center gap-3 mb-4">
             <Image src="/images/logo.svg" alt="Mahira" width={40} height={40} />
@@ -15,7 +15,7 @@ export default function FooterTraditional() {
           </p>
         </div>
 
-        <div>
+        <div className="order-1 md:order-none">
           <h4 className="font-semibold mb-4">Quick Links</h4>
           <ul className="space-y-2 text-sm opacity-90">
             <li>
@@ -39,7 +39,7 @@ export default function FooterTraditional() {
           </ul>
         </div>
 
-        <div>
+        <div className="order-2 md:order-none col-span-2 md:col-span-1">
           <h4 className="font-semibold mb-4">Contact</h4>
           <p className="text-sm opacity-90">+91 98765 43210</p>
           <p className="text-sm opacity-90 mt-2">mahiraorganics@gmail.com</p>

@@ -1,21 +1,96 @@
 import Image from "next/image";
 
 const ingredientsList = [
-  { name: "Amla", telugu: "ఉసిరి కాయలు", desc: "Indian Gooseberry", img: "/images/amla.jpg" },
-  { name: "Fenugreek", telugu: "మెంతులు", desc: "Golden seed for resilience", img: "/images/fenugreek.png" },
-  { name: "Neem", telugu: "వేపాకు", desc: "Ancient scalp purifier", img: "/images/neem.png" },
-  { name: "Moringa", telugu: "మునగ ఆకు", desc: "Drumstick leaves for strength", img: "/images/moringa.jpg" },
-  { name: "Aloe Vera", telugu: "అలోవెరా", desc: "Cooling and hydrating balm", img: "/images/aloe.jpg" },
-  { name: "Jatamansi", telugu: "జట మాంసి", desc: "Spikenard for calming", img: "/images/jatamansi.jpg" },
-  { name: "Bhringraj", telugu: "భృంగరాజ్", desc: "King of herbs for hair", img: "/images/bhringraj.jpg" },
-  { name: "Rosemary", telugu: "రోజ్ మేరీ", desc: "Stimulates hair follicles", img: "/images/rosemary.jpg" },
-  { name: "Haritaki", telugu: "హరితకి", desc: "Nourishes and protects", img: "/images/haritaki.jpg" },
-  { name: "Henna", telugu: "గోరింటాకు", desc: "Natural conditioning", img: "/images/henna.jpg" },
-  { name: "Vetiver", telugu: "వట్టి వేరు", desc: "Cooling root extract", img: "/images/vetiver.jpg" },
-  { name: "Flax Seeds", telugu: "అవిసె గింజలు", desc: "Rich in Omega-3", img: "/images/flaxseeds.jpg" },
-  { name: "Almonds", telugu: "బాదం", desc: "Deep moisture and shine", img: "/images/almonds.jpg" },
-  { name: "Hibiscus", telugu: "మందారం పువ్వులు", desc: "Flower of beauty and softness", img: "/images/hibiscus.jpg" },
-  { name: "Coconut & Castor", telugu: "కొబ్బరి నూనె + ఆముదం", desc: "Nourishing base oils", img: "/images/coconut.jpg" },
+  {
+    name: "Amla",
+    telugu: "ఉసిరి కాయలు",
+    desc: "Indian Gooseberry",
+    img: "/images/amla.jpg",
+  },
+  {
+    name: "Fenugreek",
+    telugu: "మెంతులు",
+    desc: "Golden seed for resilience",
+    img: "/images/fenugreek.png",
+  },
+  {
+    name: "Neem",
+    telugu: "వేపాకు",
+    desc: "Ancient scalp purifier",
+    img: "/images/neem.png",
+  },
+  {
+    name: "Moringa",
+    telugu: "మునగ ఆకు",
+    desc: "Drumstick leaves for strength",
+    img: "/images/moringa.jpg",
+  },
+  {
+    name: "Aloe Vera",
+    telugu: "అలోవెరా",
+    desc: "Cooling and hydrating balm",
+    img: "/images/aloe.jpg",
+  },
+  {
+    name: "Jatamansi",
+    telugu: "జట మాంసి",
+    desc: "Spikenard for calming",
+    img: "/images/jatamansi.jpg",
+  },
+  {
+    name: "Bhringraj",
+    telugu: "భృంగరాజ్",
+    desc: "King of herbs for hair",
+    img: "/images/bhringraj.jpg",
+  },
+  {
+    name: "Rosemary",
+    telugu: "రోజ్ మేరీ",
+    desc: "Stimulates hair follicles",
+    img: "/images/rosemary.jpg",
+  },
+  {
+    name: "Haritaki",
+    telugu: "హరితకి",
+    desc: "Nourishes and protects",
+    img: "/images/haritaki.jpg",
+  },
+  {
+    name: "Henna",
+    telugu: "గోరింటాకు",
+    desc: "Natural conditioning",
+    img: "/images/henna.jpg",
+  },
+  {
+    name: "Vetiver",
+    telugu: "వట్టి వేరు",
+    desc: "Cooling root extract",
+    img: "/images/vetiver.jpg",
+  },
+  {
+    name: "Flax Seeds",
+    telugu: "అవిసె గింజలు",
+    desc: "Rich in Omega-3",
+    img: "/images/flaxseeds.jpg",
+  },
+  {
+    name: "Almonds",
+    telugu: "బాదం",
+    desc: "Deep moisture and shine",
+    img: "/images/almonds.jpg",
+  },
+  {
+    name: "Hibiscus",
+    telugu: "మందారం పువ్వులు",
+    desc: "Flower of beauty and softness",
+    img: "/images/hibiscus.jpg",
+  },
+  {
+    name: "Coconut & Castor",
+    telugu: "కొబ్బరి నూనె + ఆముదం",
+    desc: "Nourishing base oils",
+    img: "/images/coconut.jpg",
+  },
 ];
 
 // Duplicate for seamless infinite loop
@@ -30,7 +105,9 @@ export default function IngredientsSectionTraditional() {
         </h2>
         <div className="w-24 h-1 bg-gold mx-auto mb-6" />
         <p className="text-center text-lg font-serif italic text-brown max-w-3xl mx-auto">
-          &ldquo;Our signature oils are born from a sacred, slow-infused blend of 29 traditional herbs. Here are the core elements we gather at dawn to bring you pure, uncompromised care.&rdquo;
+          &ldquo;Our signature oils are born from a sacred, slow-infused blend
+          of 29 traditional herbs. Here are the core elements we gather at dawn
+          to bring you pure, uncompromised care.&rdquo;
         </p>
       </div>
 
@@ -55,8 +132,12 @@ export default function IngredientsSectionTraditional() {
                 <h3 className="font-serif text-base text-brown leading-tight mb-1">
                   {item.name}
                 </h3>
-                <div className="text-gold text-xs font-medium mb-1">{item.telugu}</div>
-                <p className="text-deepBrown text-xs leading-relaxed">{item.desc}</p>
+                <div className="text-gold text-xs font-medium mb-1">
+                  {item.telugu}
+                </div>
+                <p className="text-deepBrown text-xs leading-relaxed">
+                  {item.desc}
+                </p>
               </div>
             </div>
           ))}

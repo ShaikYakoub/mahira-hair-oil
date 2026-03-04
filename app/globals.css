@@ -32,17 +32,21 @@ body {
   background: #f4e6d4;
 }
 ::-webkit-scrollbar-thumb {
-  background: #C49A3A;
+  background: #c49a3a;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #6B4F3A;
+  background: #6b4f3a;
 }
 
 /* Infinite ingredient scroll */
 @keyframes ingredient-scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 .animate-ingredient-scroll {
   animation: ingredient-scroll 35s linear infinite;

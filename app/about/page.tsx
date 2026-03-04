@@ -40,13 +40,17 @@ export default function AboutPage() {
             passed down through generations.
           </p>
           <p className="text-deepBrown text-base md:text-lg leading-loose mb-8">
-            What started as a simple, sacred practice has blossomed into our signature{" "}
-            <span className="font-bold text-brown">29-ingredient master blend</span>.
-            We believe true beauty comes from nature. That&apos;s why every bottle of
-            Mahira—from our classic herbal oils to our targeted Onion and Bhringraj specialty blends—is crafted in small batches, using only locally sourced herbs
-            and natural oils. We never use chemicals or shortcuts. Our process is
-            slow, mindful, and focused on preserving the potency of each
-            ingredient.
+            What started as a simple, sacred practice has blossomed into our
+            signature{" "}
+            <span className="font-bold text-brown">
+              29-ingredient master blend
+            </span>
+            . We believe true beauty comes from nature. That&apos;s why every
+            bottle of Mahira—from our classic herbal oils to our targeted Onion
+            and Bhringraj specialty blends—is crafted in small batches, using
+            only locally sourced herbs and natural oils. We never use chemicals
+            or shortcuts. Our process is slow, mindful, and focused on
+            preserving the potency of each ingredient.
           </p>
         </div>
         <div className="max-w-3xl mx-auto px-6 mt-12">
@@ -78,16 +82,19 @@ export default function AboutPage() {
           </div>
           <p className="text-center text-lg md:text-xl font-serif italic text-brown mb-10 max-w-2xl mx-auto">
             &ldquo;At Mahira, we believe that true care is a sacred act—one that
-            honors both the wisdom of our ancestors and the specific needs of the
-            present. Our journey is rooted in reverence for nature, mindful
+            honors both the wisdom of our ancestors and the specific needs of
+            the present. Our journey is rooted in reverence for nature, mindful
             preparation, and the quiet power of rituals passed down through
             generations.&rdquo;
           </p>
           <p className="text-center text-base md:text-lg font-serif text-brown opacity-90 max-w-2xl mx-auto mb-6">
-            Whether you are using our Anti-Dandruff Neem Shampoo or our Hair Growth Bhringraj Oil, every bottle is more than a product—it is a vessel of tradition, patience, and love.
+            Whether you are using our Anti-Dandruff Neem Shampoo or our Hair
+            Growth Bhringraj Oil, every bottle is more than a product—it is a
+            vessel of tradition, patience, and love.
           </p>
           <p className="text-center text-base md:text-lg font-serif text-brown opacity-90 max-w-2xl mx-auto">
-            We invite you to experience hair care as it was meant to be: slow, honest, and deeply nourishing.
+            We invite you to experience hair care as it was meant to be: slow,
+            honest, and deeply nourishing.
           </p>
         </div>
       </section>

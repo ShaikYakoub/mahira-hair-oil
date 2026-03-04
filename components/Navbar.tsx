@@ -27,9 +27,8 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-40 bg-beige/95 border-b border-[#d8c3ad] backdrop-blur-sm">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <Image src="/images/logo.svg" alt="Mahira" width={36} height={36} />
-          <span className="text-xl font-serif text-brown tracking-wide">MAHIRA</span>
+        <Link href="/">
+          <Image src="/images/logo.svg" alt="Mahira" width={72} height={52} style={{ border: '4px solid #b6873c' }} />
         </Link>
         {/* Hamburger button for mobile */}
         <button
@@ -69,7 +68,10 @@ export default function Navbar() {
         </div>
         {/* Mobile menu */}
         {menuOpen && (
-          <div ref={mobileMenuRef} className="absolute top-full left-0 w-full bg-beige border-b border-[#d8c3ad] shadow-lg md:hidden animate-fadeIn z-50">
+          <div
+            ref={mobileMenuRef}
+            className="absolute top-full left-0 w-full bg-beige border-b border-[#d8c3ad] shadow-lg md:hidden animate-fadeIn z-50"
+          >
             <div className="flex flex-col items-center gap-4 py-6 text-base font-medium text-deepBrown">
               <Link
                 href="/"

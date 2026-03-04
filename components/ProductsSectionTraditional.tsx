@@ -55,7 +55,8 @@ export default function ProductsSectionTraditional() {
           <div className="w-24 h-1 bg-gold mx-auto mb-6" />
           <p className="text-deepBrown text-lg max-w-2xl mx-auto">
             Experience the power of traditional village methods.{" "}
-            <span className="font-bold text-green-700">Free Shipping</span> on all orders!
+            <span className="font-bold text-green-700">Free Shipping</span> on
+            all orders!
           </p>
         </div>
 
@@ -86,8 +87,12 @@ export default function ProductsSectionTraditional() {
                   {product.name}
                 </h3>
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-xl md:text-2xl font-bold text-green-800">₹{product.price}</span>
-                  <span className="text-sm line-through text-gray-500">₹{product.mrp}</span>
+                  <span className="text-xl md:text-2xl font-bold text-green-800">
+                    ₹{product.price}
+                  </span>
+                  <span className="text-sm line-through text-gray-500">
+                    ₹{product.mrp}
+                  </span>
                 </div>
                 <div className="bg-white border border-gold/50 rounded-md p-2 mb-4 text-xs md:text-sm text-deepBrown font-medium text-center">
                   {product.offer}
@@ -101,12 +106,6 @@ export default function ProductsSectionTraditional() {
                   >
                     Order on WhatsApp
                   </a>
-                  <Link
-                    href="/products"
-                    className="block w-full text-center text-mutedGreen font-medium hover:underline text-sm"
-                  >
-                    View Details
-                  </Link>
                 </div>
               </div>
             </div>

@@ -14,7 +14,9 @@ export default function TrustStrip() {
         {trustItems.map(({ label, icon: Icon }) => (
           <div key={label} className="flex flex-col items-center">
             <Icon className="text-mutedGreen mb-2 md:mb-4" size={24} />
-            <p className="font-semibold text-brown text-xs md:text-base">{label}</p>
+            <p className="font-semibold text-brown text-xs md:text-base">
+              {label}
+            </p>
           </div>
         ))}
       </div>

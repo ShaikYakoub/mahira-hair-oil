@@ -53,8 +53,8 @@ export const metadata: Metadata = {
     images: ["/images/story-garden-hero.png"],
   },
   icons: {
-    icon: "/images/logo.svg",
-    shortcut: "/images/logo.svg",
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
   },
 };
 
