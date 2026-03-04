@@ -37,7 +37,7 @@ export default function FooterTraditional() {
             </li>
             <li>
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/916304449747"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -49,11 +49,11 @@ export default function FooterTraditional() {
 
         <div className="order-2 md:order-none col-span-2 md:col-span-1">
           <h4 className="font-semibold mb-4">Contact</h4>
-          <p className="text-sm opacity-90">+91 98765 43210</p>
-          <p className="text-sm opacity-90 mt-2">mahiraorganics@gmail.com</p>
+          <p className="text-sm opacity-90">+91 63044 49747</p>
+          <p className="text-sm opacity-90 mt-2">mahiraherbalhairoil@gmail.com</p>
           <div className="mt-4 flex gap-4 text-lg opacity-90">
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/916304449747"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"
@@ -71,7 +71,7 @@ export default function FooterTraditional() {
               </svg>
             </a>
             <a
-              href="https://instagram.com/mahiraorganics"
+              href="https://www.instagram.com/mahirahairoil?igsh=ZHJldWd1ZDBmOG43"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -89,10 +89,10 @@ export default function FooterTraditional() {
               </svg>
             </a>
             <a
-              href="https://facebook.com/mahiraorganics"
+              href="http://www.youtube.com/@MahiraHerbalhairoil"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Facebook"
+              aria-label="YouTube"
               className="hover:opacity-80"
             >
               <svg
@@ -103,7 +103,7 @@ export default function FooterTraditional() {
                 fill="currentColor"
                 aria-hidden="true"
               >
-                <path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.326 24h11.495v-9.294H9.691v-3.622h3.13V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.104C23.405 24 24 23.408 24 22.674V1.326C24 .592 23.405 0 22.675 0" />
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
               </svg>
             </a>
           </div>
