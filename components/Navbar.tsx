@@ -62,13 +62,40 @@ export default function Navbar() {
         </button>
         {/* Desktop menu */}
         <div className="hidden md:flex items-center gap-6 text-sm font-medium text-deepBrown">
-          <Link href="/" className="hover:text-brown transition">
+          <Link
+            href="/"
+            className="hover:text-brown transition"
+            onClick={(e) => {
+              if (window.location.pathname === "/") {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
+          >
             Home
           </Link>
-          <Link href="/products" className="hover:text-brown transition">
+          <Link
+            href="/products"
+            className="hover:text-brown transition"
+            onClick={(e) => {
+              if (window.location.pathname === "/products") {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
+          >
             Products
           </Link>
-          <Link href="/about" className="hover:text-brown transition">
+          <Link
+            href="/about"
+            className="hover:text-brown transition"
+            onClick={(e) => {
+              if (window.location.pathname === "/about") {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
+          >
             About
           </Link>
           <a
@@ -90,21 +117,39 @@ export default function Navbar() {
               <Link
                 href="/"
                 className="hover:text-brown transition"
-                onClick={() => setMenuOpen(false)}
+                onClick={(e) => {
+                  setMenuOpen(false);
+                  if (window.location.pathname === "/") {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }
+                }}
               >
                 Home
               </Link>
               <Link
                 href="/products"
                 className="hover:text-brown transition"
-                onClick={() => setMenuOpen(false)}
+                onClick={(e) => {
+                  setMenuOpen(false);
+                  if (window.location.pathname === "/products") {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }
+                }}
               >
                 Products
               </Link>
               <Link
                 href="/about"
                 className="hover:text-brown transition"
-                onClick={() => setMenuOpen(false)}
+                onClick={(e) => {
+                  setMenuOpen(false);
+                  if (window.location.pathname === "/about") {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }
+                }}
               >
                 About
               </Link>
