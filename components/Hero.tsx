@@ -57,7 +57,7 @@ export default function Hero({
           {children ?? (
             <div className="flex gap-4 flex-wrap">
               <a
-                href="https://wa.me/919876543210?text=Hi%20I%20want%20to%20order%20Mahira%20products"
+                href="https://wa.me/916304449747?text=Hi%20I%20want%20to%20order%20Mahira%20products"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-mutedGreen text-white px-8 py-4 rounded-full font-semibold hover:opacity-90 transition"

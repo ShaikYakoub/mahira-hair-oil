@@ -230,7 +230,7 @@ const comboOffers = [
     note: "Sold at MRP",
     description:
       "Includes 500ml Hair Oil and a complimentary 200ml Mahira Herbal Shampoo.",
-    link: "https://wa.me/919876543210?text=Hi%20I%20want%20to%20order%20Mahira%20Hair%20Oil%20500ml%20Combo",
+    link: "https://wa.me/916304449747?text=Hi%20I%20want%20to%20order%20Mahira%20Hair%20Oil%20500ml%20Combo",
   },
   {
     id: "combo-200",
@@ -240,7 +240,7 @@ const comboOffers = [
     note: "Sold at MRP",
     description:
       "Includes 200ml Hair Oil and a complimentary 100ml Mahira Herbal Shampoo.",
-    link: "https://wa.me/919876543210?text=Hi%20I%20want%20to%20order%20Mahira%20Hair%20Oil%20200ml%20Combo",
+    link: "https://wa.me/916304449747?text=Hi%20I%20want%20to%20order%20Mahira%20Hair%20Oil%20200ml%20Combo",
   },
 ];
 
@@ -261,7 +261,7 @@ export default function ProductsPage() {
       >
         {/* No View Products button on products page */}
         <a
-          href="https://wa.me/919876543210?text=Hi%20I%20want%20to%20order%20Mahira%20products"
+          href="https://wa.me/916304449747?text=Hi%20I%20want%20to%20order%20Mahira%20products"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-mutedGreen text-white px-8 py-4 rounded-full font-semibold hover:opacity-90 transition"
@@ -388,7 +388,7 @@ export default function ProductsPage() {
                     </span>
                   </div>
                   <a
-                    href={`https://wa.me/919876543210?text=Hi%20I%20want%20to%20order%20${encodeURIComponent(product.name)}`}
+                    href={`https://wa.me/916304449747?text=Hi%20I%20want%20to%20order%20${encodeURIComponent(product.name)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-mutedGreen text-white px-4 py-2 text-sm md:px-8 md:py-3 rounded-full font-semibold hover:opacity-90 transition"

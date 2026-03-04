@@ -99,7 +99,7 @@ export default function Navbar() {
             About
           </Link>
           <a
-            href="https://wa.me/919876543210"
+            href="https://wa.me/916304449747"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-mutedGreen text-white px-4 py-2 rounded-full"
@@ -154,7 +154,7 @@ export default function Navbar() {
                 About
               </Link>
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/916304449747"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-mutedGreen text-white px-6 py-2 rounded-full"

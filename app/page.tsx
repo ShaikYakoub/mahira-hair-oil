@@ -373,7 +373,7 @@ export default function Home() {
                     </div>
                     <div className="mt-auto">
                       <a
-                        href={`https://wa.me/919876543210?text=Hi%20I%20want%20to%20order%20${encodeURIComponent(product.name)}`}
+                        href={`https://wa.me/916304449747?text=Hi%20I%20want%20to%20order%20${encodeURIComponent(product.name)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="block w-full text-center bg-mutedGreen text-white py-2 md:py-3 rounded-full text-sm md:text-base font-semibold hover:bg-opacity-90 transition-colors"
@@ -441,7 +441,7 @@ export default function Home() {
                     </div>
                     <div className="mt-auto">
                       <a
-                        href={`https://wa.me/919876543210?text=Hi%20I%20want%20to%20order%20${encodeURIComponent(combo.name)}`}
+                        href={`https://wa.me/916304449747?text=Hi%20I%20want%20to%20order%20${encodeURIComponent(combo.name)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="block w-full text-center bg-mutedGreen text-white py-2 md:py-3 rounded-full text-sm md:text-base font-semibold hover:bg-opacity-90 transition-colors"
