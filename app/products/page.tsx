@@ -47,7 +47,8 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Mahira Organics",
-  description: "Traditional Ayurvedic herbal hair oil and shampoo brand based in Kadapa district, Andhra Pradesh.",
+  description:
+    "Traditional Ayurvedic herbal hair oil and shampoo brand based in Kadapa district, Andhra Pradesh.",
   email: "mahiraherbalhairoil@gmail.com",
   telephone: "+916304449747",
   address: {
@@ -368,7 +369,9 @@ export default function ProductsPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(localBusinessSchema),
+        }}
       />
 
       {individualProducts.map((product, index) => (
