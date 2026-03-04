@@ -5,11 +5,19 @@ import IngredientsDoubleScroll from "@/components/IngredientsDoubleScroll";
 import FooterTraditional from "@/components/FooterTraditional";
 import BenefitsSectionTraditional from "@/components/BenefitsSectionTraditional";
 import FadeIn from "@/components/FadeIn";
+import { kadapaLocations, kadapaKeywords } from "@/lib/locations";
 
 export const metadata: Metadata = {
   title: "Products",
   description:
-    "Explore Mahira's herbal hair oil and shampoo prepared using traditional Ayurvedic methods.",
+    "Buy Mahira Herbal Hair Oil online. Traditional Ayurvedic hair oil delivered across Kadapa, Proddatur, Pulivendula, Rajampet and all of Kadapa district, Andhra Pradesh.",
+  keywords: [
+    "Mahira Herbal Hair Oil",
+    "buy herbal hair oil online Kadapa",
+    "Ayurvedic hair oil Andhra Pradesh",
+    "hair oil delivery Kadapa district",
+    ...kadapaKeywords,
+  ],
 };
 
 const productSchema = {
@@ -17,12 +25,42 @@ const productSchema = {
   "@type": "Product",
   name: "Mahira Herbal Hair Oil",
   description:
-    "Traditional Ayurvedic hair oil made with Amla, Hibiscus, Neem, and Coconut.",
+    "Traditional Ayurvedic hair oil made with Amla, Hibiscus, Neem, and Coconut. Available across Kadapa district and all of Andhra Pradesh.",
   brand: {
     "@type": "Brand",
     name: "Mahira Organics",
   },
-  areaServed: "India",
+  areaServed: [
+    { "@type": "State", name: "Andhra Pradesh" },
+    { "@type": "AdministrativeArea", name: "Kadapa District" },
+    ...kadapaLocations.map((loc) => ({ "@type": "City", name: loc })),
+  ],
+  offers: {
+    "@type": "Offer",
+    availability: "https://schema.org/InStock",
+    priceCurrency: "INR",
+    seller: { "@type": "Organization", name: "Mahira Organics" },
+  },
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Mahira Organics",
+  description: "Traditional Ayurvedic herbal hair oil and shampoo brand based in Kadapa district, Andhra Pradesh.",
+  email: "mahiraherbalhairoil@gmail.com",
+  telephone: "+916304449747",
+  address: {
+    "@type": "PostalAddress",
+    addressRegion: "Andhra Pradesh",
+    addressCountry: "IN",
+  },
+  areaServed: kadapaLocations.map((loc) => ({ "@type": "City", name: loc })),
+  url: "https://mahiraorganics.com",
+  sameAs: [
+    "https://www.instagram.com/mahirahairoil",
+    "http://www.youtube.com/@MahiraHerbalhairoil",
+  ],
 };
 
 const ingredientsList = [
@@ -327,6 +365,10 @@ export default function ProductsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
 
       {individualProducts.map((product, index) => (

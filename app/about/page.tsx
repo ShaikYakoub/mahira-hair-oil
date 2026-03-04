@@ -4,10 +4,18 @@ import IngredientsDoubleScroll from "@/components/IngredientsDoubleScroll";
 import FooterTraditional from "@/components/FooterTraditional";
 import BenefitsSectionTraditional from "@/components/BenefitsSectionTraditional";
 
+import { kadapaLocations } from "@/lib/locations";
+
 export const metadata = {
   title: "About Us | Mahira Organics",
   description:
-    "Learn about Mahira Organics, our 29-ingredient traditional Ayurvedic roots, and our commitment to pure, handcrafted hair care.",
+    "Learn about Mahira Organics — a traditional Ayurvedic hair care brand from Kadapa district, Andhra Pradesh. Serving Kadapa, Proddatur, Pulivendula and beyond.",
+  keywords: [
+    "about Mahira Organics",
+    "Ayurvedic hair care Kadapa",
+    "herbal hair oil brand Andhra Pradesh",
+    ...kadapaLocations.map((loc) => `Mahira hair oil ${loc}`),
+  ],
 };
 
 const ingredientsList = [

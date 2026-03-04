@@ -4,6 +4,7 @@ import { Playfair_Display, Inter } from "next/font/google";
 import ClientLayout from "@/components/ClientLayout";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import Navbar from "@/components/Navbar";
+import { kadapaLocations } from "@/lib/locations";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -28,6 +29,11 @@ export const metadata: Metadata = {
     "Herbal shampoo",
     "Traditional hair care",
     "Natural hair oil India",
+    "Mahira Herbal Hair Oil",
+    "Kadapa district hair oil",
+    "Andhra Pradesh Ayurvedic hair care",
+    ...kadapaLocations.map((loc) => `herbal hair oil ${loc}`),
+    ...kadapaLocations.map((loc) => `Ayurvedic hair oil ${loc}`),
   ],
   openGraph: {
     title: "Mahira Organics",
