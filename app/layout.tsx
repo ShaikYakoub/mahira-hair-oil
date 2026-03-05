@@ -59,9 +59,13 @@ export const metadata: Metadata = {
     images: ["/images/story-garden-hero.png"],
   },
   icons: {
-    icon: "/favicon.ico?v=2",
-    shortcut: "/favicon.ico?v=2",
-    apple: "/favicon.ico?v=2",
+    icon: [
+      { url: '/icon.png?v=3', type: 'image/png' }
+    ],
+    shortcut: ['/icon.png?v=3'],
+    apple: [
+      { url: '/icon.png?v=3', sizes: '180x180', type: 'image/png' }
+    ],
   },
 };
 
