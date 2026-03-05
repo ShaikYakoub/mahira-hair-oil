@@ -50,13 +50,21 @@ const ingredientsList = [
     img: "/images/fenugreek.jpg",
   },
   { name: "Neem", desc: "Ancient scalp purifier", img: "/images/neem.jpg" },
-  { name: "Moringa", desc: "Drumstick leaves for strength", img: "/images/moringa.jpg" },
+  {
+    name: "Moringa",
+    desc: "Drumstick leaves for strength",
+    img: "/images/moringa.jpg",
+  },
   {
     name: "Aloe Vera",
     desc: "Cooling and hydrating balm",
     img: "/images/aloe.jpg",
   },
-  { name: "Jatamansi", desc: "Spikenard for calming", img: "/images/jatamansi.jpg" },
+  {
+    name: "Jatamansi",
+    desc: "Spikenard for calming",
+    img: "/images/jatamansi.jpg",
+  },
   {
     name: "Bhringraj",
     desc: "King of herbs for hair",
@@ -67,7 +75,11 @@ const ingredientsList = [
     desc: "Stimulates hair follicles",
     img: "/images/rosemary.jpg",
   },
-  { name: "Haritaki", desc: "Nourishes and protects", img: "/images/haritaki.jpg" },
+  {
+    name: "Haritaki",
+    desc: "Nourishes and protects",
+    img: "/images/haritaki.jpg",
+  },
   { name: "Henna", desc: "Natural conditioning", img: "/images/henna.jpg" },
   { name: "Vetiver", desc: "Cooling root extract", img: "/images/vetiver.jpg" },
   {
@@ -288,7 +300,7 @@ export default function ProductsPage() {
         rightImage="/images/hair-oil-500ml.png"
         rightAlt="Mahira Herbal Hair Oil 500ml"
       >
-          <a
+        <a
           href="https://wa.me/916304449747?text=Hi%20I%20want%20to%20order%20Mahira%20products"
           target="_blank"
           rel="noopener noreferrer"
@@ -305,7 +317,9 @@ export default function ProductsPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(localBusinessSchema),
+        }}
       />
 
       <section className="py-16 md:py-20 px-6 bg-[#f7ecd7] border-b-4 border-gold/30">
