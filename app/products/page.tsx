@@ -107,7 +107,7 @@ const ingredientsList = [
   {
     name: "Flax Seeds",
     desc: "Rich in Omega-3",
-    img: "/images/Flax Seeds.jpg",
+    img: "/images/flax-seeds.jpg",
   },
   {
     name: "Almonds",

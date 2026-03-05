@@ -83,14 +83,38 @@ function TestimonialsSlider() {
         }
         .testimonials-track:hover { animation-play-state: paused; }
       `}</style>
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-8 sm:w-12 md:w-24 z-10" style={{ background: 'linear-gradient(to right, #f7ecd7 80%, transparent)' }} />
-      <div className="pointer-events-none absolute right-0 top-0 h-full w-8 sm:w-12 md:w-24 z-10" style={{ background: 'linear-gradient(to left, #f7ecd7 80%, transparent)' }} />
+      <div
+        className="pointer-events-none absolute left-0 top-0 h-full w-8 sm:w-12 md:w-24 z-10"
+        style={{
+          background: "linear-gradient(to right, #f7ecd7 80%, transparent)",
+        }}
+      />
+      <div
+        className="pointer-events-none absolute right-0 top-0 h-full w-8 sm:w-12 md:w-24 z-10"
+        style={{
+          background: "linear-gradient(to left, #f7ecd7 80%, transparent)",
+        }}
+      />
       <div className="testimonials-track flex gap-8 w-max">
         {cards.map((t, i) => (
-          <div key={i} className="bg-[#f9f3e7] border-2 border-gold/60 rounded-2xl shadow-gold/10 shadow-lg flex flex-col items-center p-4 font-serif w-full max-w-xs min-w-[70vw] sm:min-w-[220px] sm:max-w-[180px] md:min-w-[320px] md:max-w-[320px]" style={{ flex: '0 0 auto' }}>
-            <Image src={t.img} alt={t.name} width={80} height={80} className="w-20 h-20 rounded-full border-2 border-gold/40 mb-4 object-cover" />
-            <div className="text-brown text-lg md:text-xl text-center mb-4 italic">&ldquo;{t.text}&rdquo;</div>
-            <div className="text-deepBrown text-base md:text-lg text-center mb-4">{t.description}</div>
+          <div
+            key={i}
+            className="bg-[#f9f3e7] border-2 border-gold/60 rounded-2xl shadow-gold/10 shadow-lg flex flex-col items-center p-4 font-serif w-full max-w-xs min-w-[70vw] sm:min-w-[220px] sm:max-w-[180px] md:min-w-[320px] md:max-w-[320px]"
+            style={{ flex: "0 0 auto" }}
+          >
+            <Image
+              src={t.img}
+              alt={t.name}
+              width={80}
+              height={80}
+              className="w-20 h-20 rounded-full border-2 border-gold/40 mb-4 object-cover"
+            />
+            <div className="text-brown text-lg md:text-xl text-center mb-4 italic">
+              &ldquo;{t.text}&rdquo;
+            </div>
+            <div className="text-deepBrown text-base md:text-lg text-center mb-4">
+              {t.description}
+            </div>
             <div className="text-gold text-base font-semibold">{t.name}</div>
           </div>
         ))}
@@ -147,7 +171,7 @@ const ingredientsList = [
   {
     name: "Flax Seeds",
     desc: "Rich in Omega-3",
-    img: "/images/Flax Seeds.jpg",
+    img: "/images/flax-seeds.jpg",
   },
   {
     name: "Almonds",
