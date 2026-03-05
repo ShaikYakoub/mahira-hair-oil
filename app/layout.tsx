@@ -60,11 +60,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/icon.png?v=4', type: 'image/png' }
+      { url: '/mahira-favicon.png?v=5', type: 'image/png' }
     ],
-    shortcut: ['/icon.png?v=4'],
+    shortcut: ['/mahira-favicon.png?v=5'],
     apple: [
-      { url: '/icon.png?v=4', sizes: '180x180', type: 'image/png' }
+      { url: '/mahira-favicon.png?v=5', sizes: '180x180', type: 'image/png' }
     ],
   },
 };
