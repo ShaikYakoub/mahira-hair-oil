@@ -58,15 +58,6 @@ export const metadata: Metadata = {
       "Traditional Ayurvedic hair oil and shampoo crafted naturally.",
     images: ["/images/story-garden-hero.png"],
   },
-  icons: {
-    icon: [
-      { url: '/mahira-favicon.png?v=5', type: 'image/png' }
-    ],
-    shortcut: ['/mahira-favicon.png?v=5'],
-    apple: [
-      { url: '/mahira-favicon.png?v=5', sizes: '180x180', type: 'image/png' }
-    ],
-  },
 };
 
 export default function RootLayout({
@@ -76,6 +67,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+    <head>
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
+      </head>
       <body className={`${playfair.variable} ${inter.variable}`}>
         <Navbar />
         <ClientLayout>{children}</ClientLayout>
