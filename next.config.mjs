@@ -2,9 +2,8 @@
 
 const nextConfig = {
   images: {
-    // Allow local /public images and SVGs without strict optimization
-    unoptimized: false,
-    remotePatterns: [],
+    // Disable Next.js image optimization — required for Cloudflare Pages/Edge
+    unoptimized: true,
   },
   // Dangerously allow production builds to successfully complete even if
   // your project has ESLint errors or TypeScript errors.

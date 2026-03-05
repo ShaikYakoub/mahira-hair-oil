@@ -1,5 +1,4 @@
 "use client";
-import { useState, useEffect } from "react";
 import Image from "next/image";
 import IngredientsDoubleScroll from "@/components/IngredientsDoubleScroll";
 import Hero from "@/components/Hero";
@@ -70,63 +69,28 @@ function TestimonialsSlider() {
       description: "Perfect for daily use. My hair feels light and healthy.",
     },
   ];
-  const [offset, setOffset] = useState(0);
   const cards = [...testimonials, ...testimonials];
-  const cardWidth = 340; // px, matches min-w-[320px] + gap
-  useEffect(() => {
-    let animationFrame: number;
-    function animate() {
-      setOffset((prev) => {
-        const next = prev + 0.5;
-        return next >= (cards.length * cardWidth) / 2 ? 0 : next;
-      });
-      animationFrame = requestAnimationFrame(animate);
-    }
-    animationFrame = requestAnimationFrame(animate);
-    return () => cancelAnimationFrame(animationFrame);
-  }, [cards.length, cardWidth]);
   return (
     <div className="relative overflow-hidden w-full max-w-full mx-auto">
-      {/* Left fade */}
-      <div
-        className="pointer-events-none absolute left-0 top-0 h-full w-8 sm:w-12 md:w-24 z-10"
-        style={{
-          background: "linear-gradient(to right, #f7ecd7 80%, transparent)",
-        }}
-      />
-      {/* Right fade */}
-      <div
-        className="pointer-events-none absolute right-0 top-0 h-full w-8 sm:w-12 md:w-24 z-10"
-        style={{
-          background: "linear-gradient(to left, #f7ecd7 80%, transparent)",
-        }}
-      />
-      <div
-        className="flex gap-8 w-max"
-        style={{
-          transform: `translateX(-${offset}px)`,
-          transition: "transform 0.1s linear",
-        }}
-      >
+      <style>{`
+        @keyframes marquee {
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .testimonials-track {
+          animation: marquee 40s linear infinite;
+          will-change: transform;
+        }
+        .testimonials-track:hover { animation-play-state: paused; }
+      `}</style>
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-8 sm:w-12 md:w-24 z-10" style={{ background: 'linear-gradient(to right, #f7ecd7 80%, transparent)' }} />
+      <div className="pointer-events-none absolute right-0 top-0 h-full w-8 sm:w-12 md:w-24 z-10" style={{ background: 'linear-gradient(to left, #f7ecd7 80%, transparent)' }} />
+      <div className="testimonials-track flex gap-8 w-max">
         {cards.map((t, i) => (
-          <div
-            key={i}
-            className="bg-[#f9f3e7] border-2 border-gold/60 rounded-2xl shadow-gold/10 shadow-lg flex flex-col items-center p-4 font-serif w-full max-w-xs min-w-[70vw] sm:min-w-[220px] sm:max-w-[180px] md:min-w-[320px] md:max-w-[320px] transition-all duration-300"
-            style={{ flex: "0 0 auto" }}
-          >
-            <Image
-              src={t.img}
-              alt={t.name}
-              width={80}
-              height={80}
-              className="w-20 h-20 rounded-full border-2 border-gold/40 mb-4 object-cover"
-            />
-            <div className="text-brown text-lg md:text-xl text-center mb-4 italic">
-              “{t.text}”
-            </div>
-            <div className="text-deepBrown text-base md:text-lg text-center mb-4">
-              {t.description}
-            </div>
+          <div key={i} className="bg-[#f9f3e7] border-2 border-gold/60 rounded-2xl shadow-gold/10 shadow-lg flex flex-col items-center p-4 font-serif w-full max-w-xs min-w-[70vw] sm:min-w-[220px] sm:max-w-[180px] md:min-w-[320px] md:max-w-[320px]" style={{ flex: '0 0 auto' }}>
+            <Image src={t.img} alt={t.name} width={80} height={80} className="w-20 h-20 rounded-full border-2 border-gold/40 mb-4 object-cover" />
+            <div className="text-brown text-lg md:text-xl text-center mb-4 italic">&ldquo;{t.text}&rdquo;</div>
+            <div className="text-deepBrown text-base md:text-lg text-center mb-4">{t.description}</div>
             <div className="text-gold text-base font-semibold">{t.name}</div>
           </div>
         ))}
