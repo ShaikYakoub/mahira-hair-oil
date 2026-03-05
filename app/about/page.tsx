@@ -7,11 +7,11 @@ import BenefitsSectionTraditional from "@/components/BenefitsSectionTraditional"
 import { kadapaLocations } from "@/lib/locations";
 
 export const metadata = {
-  title: "About Us | Mahira Organics",
+  title: "About Us | Mahira Herbals",
   description:
-    "Learn about Mahira Organics — a traditional Ayurvedic hair care brand from Kadapa district, Andhra Pradesh. Serving Kadapa, Proddatur, Pulivendula and beyond.",
+    "Learn about Mahira Herbals — a traditional Ayurvedic hair care brand from Kadapa district, Andhra Pradesh. Serving Kadapa, Proddatur, Pulivendula and beyond.",
   keywords: [
-    "about Mahira Organics",
+    "about Mahira Herbals",
     "Ayurvedic hair care Kadapa",
     "herbal hair oil brand Andhra Pradesh",
     ...kadapaLocations.map((loc) => `Mahira hair oil ${loc}`),
@@ -85,10 +85,10 @@ export default function AboutPage() {
     <main className="text-brown min-h-screen relative overflow-hidden">
       {/* About Hero Section */}
       <Hero
-        heading={<>About Mahira Organics</>}
+        heading={<>About Mahira Herbals</>}
         subheading={
           <>
-            Rooted in tradition, Mahira Organics brings pure, honest Ayurvedic
+            Rooted in tradition, Mahira Herbals brings pure, honest Ayurvedic
             hair care to modern homes. Discover our story and values.
           </>
         }
@@ -110,7 +110,7 @@ export default function AboutPage() {
           </h1>
           <div className="w-24 h-1 bg-gold mx-auto mb-8" />
           <p className="text-deepBrown text-base md:text-lg leading-loose mb-8">
-            Mahira Organics was born from a deep respect for traditional
+            Mahira Herbals was born from a deep respect for traditional
             Ayurvedic wisdom and a desire to bring pure, honest hair care to
             modern homes. Our roots trace back to a small village where herbs
             are still handpicked, ground, and infused using age-old methods

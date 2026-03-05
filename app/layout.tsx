@@ -17,13 +17,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mahiraorganics.com"),
+  metadataBase: new URL("https://mahiraherbals.com"),
   title: {
-    default: "Mahira Organics | Traditional Ayurvedic Hair Care",
-    template: "%s | Mahira Organics",
+    default: "Mahira Herbals | Traditional Ayurvedic Hair Care",
+    template: "%s | Mahira Herbals",
   },
   description:
-    "Mahira Organics offers traditional Ayurvedic hair oil and shampoo made using natural herbs and village preparation methods.",
+    "Mahira Herbals offers traditional Ayurvedic hair oil and shampoo made using natural herbs and village preparation methods.",
   keywords: [
     "Ayurvedic hair oil",
     "Herbal shampoo",
@@ -36,10 +36,10 @@ export const metadata: Metadata = {
     ...kadapaLocations.map((loc) => `Ayurvedic hair oil ${loc}`),
   ],
   openGraph: {
-    title: "Mahira Organics",
+    title: "Mahira Herbals",
     description: "Traditional Ayurvedic hair care crafted with natural herbs.",
-    url: "https://mahiraorganics.com",
-    siteName: "Mahira Organics",
+    url: "https://mahiraherbals.com",
+    siteName: "Mahira Herbals",
     images: [
       {
         url: "/images/story-garden-hero.png",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mahira Organics",
+    title: "Mahira Herbals",
     description:
       "Traditional Ayurvedic hair oil and shampoo crafted naturally.",
     images: ["/images/story-garden-hero.png"],

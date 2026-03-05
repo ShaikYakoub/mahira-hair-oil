@@ -113,7 +113,7 @@ export default function FooterTraditional() {
       </div>
 
       <div className="text-center text-xs mt-12 opacity-70">
-        © {new Date().getFullYear()} Mahira Organics. All rights reserved.
+        © {new Date().getFullYear()} Mahira Herbals. All rights reserved.
       </div>
     </footer>
   );

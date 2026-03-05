@@ -8,7 +8,7 @@ import FadeIn from "@/components/FadeIn";
 import { kadapaLocations, kadapaKeywords } from "@/lib/locations";
 
 export const metadata: Metadata = {
-  title: "Products",
+  title: "Products | Mahira Herbals",
   description:
     "Buy Mahira Herbal Hair Oil online. Traditional Ayurvedic hair oil delivered across Kadapa, Proddatur, Pulivendula, Rajampet and all of Kadapa district, Andhra Pradesh.",
   keywords: [
@@ -20,33 +20,11 @@ export const metadata: Metadata = {
   ],
 };
 
-const productSchema = {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  name: "Mahira Herbal Hair Oil",
-  description:
-    "Traditional Ayurvedic hair oil made with Amla, Hibiscus, Neem, and Coconut. Available across Kadapa district and all of Andhra Pradesh.",
-  brand: {
-    "@type": "Brand",
-    name: "Mahira Organics",
-  },
-  areaServed: [
-    { "@type": "State", name: "Andhra Pradesh" },
-    { "@type": "AdministrativeArea", name: "Kadapa District" },
-    ...kadapaLocations.map((loc) => ({ "@type": "City", name: loc })),
-  ],
-  offers: {
-    "@type": "Offer",
-    availability: "https://schema.org/InStock",
-    priceCurrency: "INR",
-    seller: { "@type": "Organization", name: "Mahira Organics" },
-  },
-};
-
+// 1. Local Business Schema (Perfect for Kadapa SEO)
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Mahira Organics",
+  name: "Mahira Herbals",
   description:
     "Traditional Ayurvedic herbal hair oil and shampoo brand based in Kadapa district, Andhra Pradesh.",
   email: "mahiraherbalhairoil@gmail.com",
@@ -57,7 +35,7 @@ const localBusinessSchema = {
     addressCountry: "IN",
   },
   areaServed: kadapaLocations.map((loc) => ({ "@type": "City", name: loc })),
-  url: "https://mahiraorganics.com",
+  url: "https://mahiraherbals.com",
   sameAs: [
     "https://www.instagram.com/mahirahairoil",
     "http://www.youtube.com/@MahiraHerbalhairoil",
@@ -72,21 +50,13 @@ const ingredientsList = [
     img: "/images/fenugreek.jpg",
   },
   { name: "Neem", desc: "Ancient scalp purifier", img: "/images/neem.jpg" },
-  {
-    name: "Moringa",
-    desc: "Drumstick leaves for strength",
-    img: "/images/Moringa.jpg",
-  },
+  { name: "Moringa", desc: "Drumstick leaves for strength", img: "/images/moringa.jpg" },
   {
     name: "Aloe Vera",
     desc: "Cooling and hydrating balm",
     img: "/images/aloe.jpg",
   },
-  {
-    name: "Jatamansi",
-    desc: "Spikenard for calming",
-    img: "/images/Jatamansi.jpg",
-  },
+  { name: "Jatamansi", desc: "Spikenard for calming", img: "/images/jatamansi.jpg" },
   {
     name: "Bhringraj",
     desc: "King of herbs for hair",
@@ -97,13 +67,9 @@ const ingredientsList = [
     desc: "Stimulates hair follicles",
     img: "/images/rosemary.jpg",
   },
-  {
-    name: "Haritaki",
-    desc: "Nourishes and protects",
-    img: "/images/Haritaki.jpg",
-  },
-  { name: "Henna", desc: "Natural conditioning", img: "/images/Henna.jpg" },
-  { name: "Vetiver", desc: "Cooling root extract", img: "/images/Vetiver.jpg" },
+  { name: "Haritaki", desc: "Nourishes and protects", img: "/images/haritaki.jpg" },
+  { name: "Henna", desc: "Natural conditioning", img: "/images/henna.jpg" },
+  { name: "Vetiver", desc: "Cooling root extract", img: "/images/vetiver.jpg" },
   {
     name: "Flax Seeds",
     desc: "Rich in Omega-3",
@@ -240,7 +206,6 @@ const individualProducts: Product[] = [
       "Adds natural softness",
     ],
   },
-  // ...removed Onion Herbal Shampoo...
   {
     id: "neem-shampoo",
     name: "Neem Herbal Shampoo – 200ml",
@@ -283,6 +248,31 @@ const comboOffers = [
   },
 ];
 
+// 2. Dynamic ItemList Schema (auto-generates SEO tags for every product)
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  itemListElement: individualProducts.map((product, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    item: {
+      "@type": "Product",
+      name: product.name,
+      image: `https://mahiraherbals.com${product.image}`,
+      description: product.description,
+      brand: { "@type": "Brand", name: "Mahira Herbals" },
+      offers: {
+        "@type": "Offer",
+        url: "https://mahiraherbals.com/products",
+        priceCurrency: "INR",
+        price: product.price.toString(),
+        availability: "https://schema.org/InStock",
+        itemCondition: "https://schema.org/NewCondition",
+      },
+    },
+  })),
+};
+
 export default function ProductsPage() {
   return (
     <main className="text-brown relative overflow-hidden">
@@ -298,8 +288,7 @@ export default function ProductsPage() {
         rightImage="/images/hair-oil-500ml.png"
         rightAlt="Mahira Herbal Hair Oil 500ml"
       >
-        {/* No View Products button on products page */}
-        <a
+          <a
           href="https://wa.me/916304449747?text=Hi%20I%20want%20to%20order%20Mahira%20products"
           target="_blank"
           rel="noopener noreferrer"
@@ -308,6 +297,16 @@ export default function ProductsPage() {
           Order on WhatsApp
         </a>
       </Hero>
+
+      {/* Injected the Dynamic Schemas here */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
 
       <section className="py-16 md:py-20 px-6 bg-[#f7ecd7] border-b-4 border-gold/30">
         <div className="max-w-4xl mx-auto">
@@ -362,17 +361,6 @@ export default function ProductsPage() {
           </div>
         </div>
       </section>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(localBusinessSchema),
-        }}
-      />
 
       {individualProducts.map((product, index) => (
         <section
