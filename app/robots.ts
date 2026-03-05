@@ -1,11 +1,11 @@
-import type { MetadataRoute } from "next";
-
+import { MetadataRoute } from 'next'
+ 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
-      userAgent: "*",
-      allow: "/",
+      userAgent: '*',
+      allow: '/',
     },
-    sitemap: "https://mahiraorganics.com/sitemap.xml",
-  };
+    sitemap: 'https://mahiraherbals.com/sitemap.xml', // Replace with your domain
+  }
 }
