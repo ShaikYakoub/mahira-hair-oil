@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "Mahira Herbals",
     images: [
       {
-        url: "/images/story-garden-hero.png",
+        url: "/images/story-garden-hero.webp",
         width: 2816,
         height: 1536,
         alt: "Mahira Ayurvedic Hair Care",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     title: "Mahira Herbals",
     description:
       "Traditional Ayurvedic hair oil and shampoo crafted naturally.",
-    images: ["/images/story-garden-hero.png"],
+    images: ["/images/story-garden-hero.webp"],
   },
 };
 
@@ -69,8 +69,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/png" href="/favicon.png" />
-        <link rel="apple-touch-icon" href="/favicon.png" />
+        <link rel="icon" type="image/webp" href="/favicon.webp" />
+        <link rel="apple-touch-icon" href="/favicon.webp" />
       </head>
       <body className={`${playfair.variable} ${inter.variable}`}>
         <Script
@@ -85,7 +85,7 @@ export default function RootLayout({
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '1075390860991345');
+            fbq('init', '1502214947931260');
             fbq('track', 'PageView');`,
           }}
         />
@@ -94,7 +94,7 @@ export default function RootLayout({
             height="1"
             width="1"
             style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=1075390860991345&ev=PageView&noscript=1"
+            src="https://www.facebook.com/tr?id=1502214947931260&ev=PageView&noscript=1"
             alt="Meta Pixel"
           />
         </noscript>

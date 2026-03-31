@@ -6,64 +6,64 @@ import TrustStrip from "@/components/TrustStrip";
 function TestimonialsSlider() {
   const testimonials = [
     {
-      img: "/images/testimonial-1.jpg",
+      img: "/images/testimonial-1.webp",
       name: "Ramesh, Pune",
       text: "The oil and shampoo combo revived my hair. It feels blessed and full of life.",
       description:
         "Perfect for families. My hair is softer and healthier every day.",
     },
     {
-      img: "/images/testimonial-2.jpg",
+      img: "/images/testimonial-2.webp",
       name: "Anita, Delhi",
       text: "Mahira helped my thinning hair grow back. The fragrance is wonderful!",
       description:
         "I never thought I’d see new hair. The oil is gentle and smells divine.",
     },
     {
-      img: "/images/testimonial-3.jpg",
+      img: "/images/testimonial-3.webp",
       name: "Vikram, Mumbai",
       text: "After a month, my hair color got richer. Even my barber noticed!",
       description:
         "The natural ingredients really work. My hair feels strong and vibrant.",
     },
     {
-      img: "/images/testimonial-4.jpg",
+      img: "/images/testimonial-4.webp",
       name: "Priya, New York",
       text: "I gifted Mahira oil abroad. Everyone loves the traditional touch.",
       description: "Friends overseas appreciate the ritual and purity.",
     },
     {
-      img: "/images/testimonial-5.jpg",
+      img: "/images/testimonial-5.webp",
       name: "Suresh, Chennai",
       text: "Using Mahira is now a ritual in my home. Brings peace and joy.",
       description: "The oil brings calm and happiness to our family.",
     },
     {
-      img: "/images/neem.jpg",
+      img: "/images/neem.webp",
       name: "Meena, Jaipur",
       text: "My scalp feels nourished and healthy. No more dryness!",
       description: "Neem’s power soothes and balances my scalp.",
     },
     {
-      img: "/images/argan.jpg",
+      img: "/images/argan.webp",
       name: "Arjun, Bengaluru",
       text: "The shine and strength are unmatched. I recommend it to all my friends.",
       description: "Argan’s richness gives my hair a beautiful glow.",
     },
     {
-      img: "/images/rosemary.jpg",
+      img: "/images/rosemary.webp",
       name: "Fatima, Hyderabad",
       text: "The herbal blend is perfect for my sensitive scalp. No irritation, just results.",
       description: "Rosemary and herbs make my hair feel fresh and clean.",
     },
     {
-      img: "/images/hair-oil-200ml.png",
+      img: "/images/hair-oil-200ml.webp",
       name: "Deepak, Lucknow",
       text: "I use the oil every other day. My hair is thicker and fuller.",
       description: "The ritual brings visible results. Highly recommended.",
     },
     {
-      img: "/images/shampoo-100ml.png",
+      img: "/images/shampoo-100ml.webp",
       name: "Sunita, Kolkata",
       text: "The shampoo cleanses gently and leaves my hair soft.",
       description: "Perfect for daily use. My hair feels light and healthy.",
@@ -129,64 +129,68 @@ import FooterTraditional from "@/components/FooterTraditional";
 import FadeIn from "@/components/FadeIn";
 
 const ingredientsList = [
-  { name: "Amla", desc: "Indian Gooseberry", img: "/images/amla.jpg" },
+  { name: "Amla", desc: "Indian Gooseberry", img: "/images/amla.webp" },
   {
     name: "Fenugreek",
     desc: "Golden seed for resilience",
-    img: "/images/fenugreek.jpg",
+    img: "/images/fenugreek.webp",
   },
-  { name: "Neem", desc: "Ancient scalp purifier", img: "/images/neem.jpg" },
+  { name: "Neem", desc: "Ancient scalp purifier", img: "/images/neem.webp" },
   {
     name: "Moringa",
     desc: "Drumstick leaves for strength",
-    img: "/images/Moringa.jpg",
+    img: "/images/Moringa.webp",
   },
   {
     name: "Aloe Vera",
     desc: "Cooling and hydrating balm",
-    img: "/images/aloe.jpg",
+    img: "/images/aloe.webp",
   },
   {
     name: "Jatamansi",
     desc: "Spikenard for calming",
-    img: "/images/Jatamansi.jpg",
+    img: "/images/Jatamansi.webp",
   },
   {
     name: "Bhringraj",
     desc: "King of herbs for hair",
-    img: "/images/bhringraj.jpg",
+    img: "/images/bhringraj.webp",
   },
   {
     name: "Rosemary",
     desc: "Stimulates hair follicles",
-    img: "/images/rosemary.jpg",
+    img: "/images/rosemary.webp",
   },
   {
     name: "Haritaki",
     desc: "Nourishes and protects",
-    img: "/images/Haritaki.jpg",
+    img: "/images/Haritaki.webp",
   },
-  { name: "Henna", desc: "Natural conditioning", img: "/images/Henna.jpg" },
-  { name: "Vetiver", desc: "Cooling root extract", img: "/images/Vetiver.jpg" },
+  { name: "Henna", desc: "Natural conditioning", img: "/images/Henna.webp" },
+  {
+    name: "Vetiver",
+    desc: "Cooling root extract",
+    img: "/images/Vetiver.webp",
+  },
   {
     name: "Flax Seeds",
     desc: "Rich in Omega-3",
-    img: "/images/flax-seeds.jpg",
+    img: "/images/flax-seeds.webp",
   },
   {
     name: "Almonds",
     desc: "Deep moisture and shine",
-    img: "/images/almonds.jpg",
+    img: "/images/almonds.webp",
   },
   {
     name: "Hibiscus",
     desc: "Flower of beauty and softness",
-    img: "/images/hibiscus.jpg",
+    img: "/images/hibiscus.webp",
   },
   {
     name: "Coconut & Castor",
     desc: "Nourishing base oils",
-    img: "/images/coconut.jpg",
+    img: "/images/coconut.webp",
   },
 ];
 const allProducts = [
@@ -198,7 +202,7 @@ const allProducts = [
     price: 1199,
     discount: "20% OFF",
     offer: "🎁 FREE 200ml Regular Shampoo (Worth ₹399)",
-    img: "/images/hair-oil-500ml.png",
+    img: "/images/hair-oil-500ml.webp",
   },
   {
     id: "base-200",
@@ -208,7 +212,7 @@ const allProducts = [
     price: 479,
     discount: "20% OFF",
     offer: "🎁 FREE 100ml Regular Shampoo (Worth ₹199)",
-    img: "/images/hair-oil-200ml.png",
+    img: "/images/hair-oil-200ml.webp",
   },
   {
     id: "onion-oil",
@@ -218,7 +222,7 @@ const allProducts = [
     price: 399,
     discount: "20% OFF",
     offer: "Anti-Hairfall Formula",
-    img: "/images/onion-hair-oil.png",
+    img: "/images/onion-hair-oil.webp",
   },
   {
     id: "bhringraj-oil",
@@ -228,7 +232,7 @@ const allProducts = [
     price: 399,
     discount: "20% OFF",
     offer: "Hair Growth & Root Strengthening",
-    img: "/images/bhringraj-hair-oil.png",
+    img: "/images/bhringraj-hair-oil.webp",
   },
   {
     id: "shampoo-regular",
@@ -238,7 +242,7 @@ const allProducts = [
     price: 359,
     discount: "10% OFF",
     offer: "Anti-Hairfall & Smooth-Silky",
-    img: "/images/shampoo-100ml.png",
+    img: "/images/shampoo-100ml.webp",
   },
   {
     id: "shampoo-100",
@@ -248,7 +252,7 @@ const allProducts = [
     price: 199,
     discount: "20% OFF",
     offer: "Gentle daily cleanser",
-    img: "/images/shampoo-100ml.png",
+    img: "/images/shampoo-100ml.webp",
   },
   {
     id: "shampoo-neem",
@@ -258,7 +262,7 @@ const allProducts = [
     price: 314,
     discount: "10% OFF",
     offer: "Anti-Dandruff Formula",
-    img: "/images/neem-shampoo.png",
+    img: "/images/neem-shampoo.webp",
   },
 ];
 
@@ -268,7 +272,7 @@ const comboOffers = [
     name: "Herbal Hair Oil Combo – 500ml + Free 200ml Shampoo",
     mrp: 1499,
     tag: "Sold at MRP",
-    img: "/images/500ml-combo-offer.png",
+    img: "/images/500ml-combo-offer.webp",
     description:
       "Includes 500ml Hair Oil and a complimentary 200ml Regular Shampoo.",
   },
@@ -277,7 +281,7 @@ const comboOffers = [
     name: "Herbal Hair Oil Combo – 200ml + Free 100ml Shampoo",
     mrp: 599,
     tag: "Sold at MRP",
-    img: "/images/200ml-combo-offer.png",
+    img: "/images/200ml-combo-offer.webp",
     description:
       "Includes 200ml Hair Oil and a complimentary 100ml Regular Shampoo.",
   },

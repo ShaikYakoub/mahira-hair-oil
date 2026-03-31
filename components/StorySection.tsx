@@ -6,7 +6,7 @@ export default function StorySection() {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
         <div className="relative h-[420px] md:h-[450px] rounded-xl overflow-hidden shadow-md shadow-brown/10">
           <Image
-            src="/images/story-mortar-pestle.jpg"
+            src="/images/story-mortar-pestle.webp"
             alt="Traditional Ayurvedic preparation"
             fill
             className="object-cover"

@@ -11,7 +11,7 @@ interface HeroProps {
 }
 
 export default function Hero({
-  bgImage = "/images/story-garden-hero.png",
+  bgImage = "/images/story-garden-hero.webp",
   bgAlt = "Soft village sunrise",
   heading = (
     <>
@@ -26,7 +26,7 @@ export default function Hero({
       methods and natural ingredients.
     </>
   ),
-  rightImage = "/images/product-on-wooden-table.jpg",
+  rightImage = "/images/product-on-wooden-table.webp",
   rightAlt = "Mahira Ayurvedic product on wooden table",
   children,
 }: HeroProps) {

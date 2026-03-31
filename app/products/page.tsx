@@ -43,64 +43,68 @@ const localBusinessSchema = {
 };
 
 const ingredientsList = [
-  { name: "Amla", desc: "Indian Gooseberry", img: "/images/amla.jpg" },
+  { name: "Amla", desc: "Indian Gooseberry", img: "/images/amla.webp" },
   {
     name: "Fenugreek",
     desc: "Golden seed for resilience",
-    img: "/images/fenugreek.jpg",
+    img: "/images/fenugreek.webp",
   },
-  { name: "Neem", desc: "Ancient scalp purifier", img: "/images/neem.jpg" },
+  { name: "Neem", desc: "Ancient scalp purifier", img: "/images/neem.webp" },
   {
     name: "Moringa",
     desc: "Drumstick leaves for strength",
-    img: "/images/moringa.jpg",
+    img: "/images/moringa.webp",
   },
   {
     name: "Aloe Vera",
     desc: "Cooling and hydrating balm",
-    img: "/images/aloe.jpg",
+    img: "/images/aloe.webp",
   },
   {
     name: "Jatamansi",
     desc: "Spikenard for calming",
-    img: "/images/jatamansi.jpg",
+    img: "/images/jatamansi.webp",
   },
   {
     name: "Bhringraj",
     desc: "King of herbs for hair",
-    img: "/images/bhringraj.jpg",
+    img: "/images/bhringraj.webp",
   },
   {
     name: "Rosemary",
     desc: "Stimulates hair follicles",
-    img: "/images/rosemary.jpg",
+    img: "/images/rosemary.webp",
   },
   {
     name: "Haritaki",
     desc: "Nourishes and protects",
-    img: "/images/haritaki.jpg",
+    img: "/images/haritaki.webp",
   },
-  { name: "Henna", desc: "Natural conditioning", img: "/images/henna.jpg" },
-  { name: "Vetiver", desc: "Cooling root extract", img: "/images/vetiver.jpg" },
+  { name: "Henna", desc: "Natural conditioning", img: "/images/henna.webp" },
+  {
+    name: "Vetiver",
+    desc: "Cooling root extract",
+    img: "/images/vetiver.webp",
+  },
   {
     name: "Flax Seeds",
     desc: "Rich in Omega-3",
-    img: "/images/flax-seeds.jpg",
+    img: "/images/flax-seeds.webp",
   },
   {
     name: "Almonds",
     desc: "Deep moisture and shine",
-    img: "/images/almonds.jpg",
+    img: "/images/almonds.webp",
   },
   {
     name: "Hibiscus",
     desc: "Flower of beauty and softness",
-    img: "/images/hibiscus.jpg",
+    img: "/images/hibiscus.webp",
   },
   {
     name: "Coconut & Castor",
     desc: "Nourishing base oils",
-    img: "/images/coconut.jpg",
+    img: "/images/coconut.webp",
   },
 ];
 
@@ -120,7 +124,7 @@ const individualProducts: Product[] = [
   {
     id: "hair-oil-200",
     name: "Herbal Hair Oil – 200ml",
-    image: "/images/hair-oil-200ml.png",
+    image: "/images/hair-oil-200ml.webp",
     price: 479,
     mrp: 599,
     discount: "20% OFF",
@@ -137,7 +141,7 @@ const individualProducts: Product[] = [
   {
     id: "hair-oil-500",
     name: "Herbal Hair Oil – 500ml",
-    image: "/images/hair-oil-500ml.png",
+    image: "/images/hair-oil-500ml.webp",
     price: 1199,
     mrp: 1499,
     discount: "20% OFF",
@@ -154,7 +158,7 @@ const individualProducts: Product[] = [
   {
     id: "shampoo-regular",
     name: "Mahira Herbal Shampoo – 200ml",
-    image: "/images/shampoo-100ml.png",
+    image: "/images/shampoo-100ml.webp",
     price: 359,
     mrp: 399,
     discount: "10% OFF",
@@ -171,7 +175,7 @@ const individualProducts: Product[] = [
   {
     id: "shampoo-100",
     name: "Mahira Herbal Shampoo – 100ml",
-    image: "/images/shampoo-100ml.png",
+    image: "/images/shampoo-100ml.webp",
     price: 199,
     mrp: 249,
     discount: "20% OFF",
@@ -187,7 +191,7 @@ const individualProducts: Product[] = [
   {
     id: "onion-oil",
     name: "Onion Hair Oil – 200ml",
-    image: "/images/onion-hair-oil.png",
+    image: "/images/onion-hair-oil.webp",
     price: 399,
     mrp: 499,
     discount: "20% OFF",
@@ -204,7 +208,7 @@ const individualProducts: Product[] = [
   {
     id: "bhringraj-oil",
     name: "Bhringraj Hair Oil – 200ml",
-    image: "/images/bhringraj-hair-oil.png",
+    image: "/images/bhringraj-hair-oil.webp",
     price: 399,
     mrp: 499,
     discount: "20% OFF",
@@ -221,7 +225,7 @@ const individualProducts: Product[] = [
   {
     id: "neem-shampoo",
     name: "Neem Herbal Shampoo – 200ml",
-    image: "/images/neem-shampoo.png",
+    image: "/images/neem-shampoo.webp",
     price: 314,
     mrp: 349,
     discount: "10% OFF",
@@ -241,7 +245,7 @@ const comboOffers = [
   {
     id: "combo-500",
     name: "Herbal Hair Oil Combo – 500ml + Free 200ml Shampoo",
-    image: "/images/500ml-combo-offer.png",
+    image: "/images/500ml-combo-offer.webp",
     mrp: 1499,
     note: "Sold at MRP",
     description:
@@ -251,7 +255,7 @@ const comboOffers = [
   {
     id: "combo-200",
     name: "Herbal Hair Oil Combo – 200ml + Free 100ml Shampoo",
-    image: "/images/200ml-combo-offer.png",
+    image: "/images/200ml-combo-offer.webp",
     mrp: 599,
     note: "Sold at MRP",
     description:
@@ -297,7 +301,7 @@ export default function ProductsPage() {
             local ingredients.
           </>
         }
-        rightImage="/images/hair-oil-500ml.png"
+        rightImage="/images/hair-oil-500ml.webp"
         rightAlt="Mahira Herbal Hair Oil 500ml"
       >
         <a

@@ -4,77 +4,77 @@ const ingredientsList = [
   {
     name: "Amla",
     desc: "Indian Gooseberry",
-    img: "/images/amla.jpg",
+    img: "/images/amla.webp",
   },
   {
     name: "Fenugreek",
     desc: "Golden seed for resilience",
-    img: "/images/fenugreek.jpg",
+    img: "/images/fenugreek.webp",
   },
   {
     name: "Neem",
     desc: "Ancient scalp purifier",
-    img: "/images/neem.jpg",
+    img: "/images/neem.webp",
   },
   {
     name: "Moringa",
     desc: "Drumstick leaves for strength",
-    img: "/images/moringa.jpg",
+    img: "/images/moringa.webp",
   },
   {
     name: "Aloe Vera",
     desc: "Cooling and hydrating balm",
-    img: "/images/aloe.jpg",
+    img: "/images/aloe.webp",
   },
   {
     name: "Jatamansi",
     desc: "Spikenard for calming",
-    img: "/images/jatamansi.jpg",
+    img: "/images/jatamansi.webp",
   },
   {
     name: "Bhringraj",
     desc: "King of herbs for hair",
-    img: "/images/bhringraj.jpg",
+    img: "/images/bhringraj.webp",
   },
   {
     name: "Rosemary",
     desc: "Stimulates hair follicles",
-    img: "/images/rosemary.jpg",
+    img: "/images/rosemary.webp",
   },
   {
     name: "Haritaki",
     desc: "Nourishes and protects",
-    img: "/images/haritaki.jpg",
+    img: "/images/haritaki.webp",
   },
   {
     name: "Henna",
     desc: "Natural conditioning",
-    img: "/images/henna.jpg",
+    img: "/images/henna.webp",
   },
   {
     name: "Vetiver",
     desc: "Cooling root extract",
-    img: "/images/vetiver.jpg",
+    img: "/images/vetiver.webp",
   },
   {
     name: "Flax Seeds",
     desc: "Rich in Omega-3",
-    img: "/images/flax-seeds.jpg",
+    img: "/images/flax-seeds.webp",
   },
   {
     name: "Almonds",
     desc: "Deep moisture and shine",
-    img: "/images/almonds.jpg",
+    img: "/images/almonds.webp",
   },
   {
     name: "Hibiscus",
     desc: "Flower of beauty and softness",
-    img: "/images/hibiscus.jpg",
+    img: "/images/hibiscus.webp",
   },
   {
     name: "Coconut & Castor",
     desc: "Nourishing base oils",
-    img: "/images/coconut.jpg",
+    img: "/images/coconut.webp",
   },
 ];
 

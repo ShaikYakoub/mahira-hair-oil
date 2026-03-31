@@ -8,11 +8,10 @@ export default function FooterTraditional() {
         <div className="col-span-2 md:col-span-1">
           <div className="flex items-center gap-3 mb-4">
             <Image
-              src="/images/logo.svg"
+              src="/images/logo.webp"
               alt="Mahira"
               width={72}
               height={72}
-              style={{ border: "4px solid #b6873c" }}
             />
             <span className="font-serif text-xl text-gold font-bold tracking-wide select-none">
               Mahira Herbals
@@ -49,9 +48,18 @@ export default function FooterTraditional() {
 
         <div className="order-2 md:order-none col-span-2 md:col-span-1">
           <h4 className="font-semibold mb-4">Contact</h4>
-          <p className="text-sm opacity-90">+91 63044 49747</p>
+          <p className="text-sm opacity-90">
+            <a href="tel:+916304449747" className="hover:text-gold">
+              +91 63044 49747
+            </a>
+          </p>
           <p className="text-sm opacity-90 mt-2">
-            mahiraherbalhairoil@gmail.com
+            <a
+              href="mailto:mahiraherbalhairoil@gmail.com"
+              className="hover:text-gold"
+            >
+              mahiraherbalhairoil@gmail.com
+            </a>
           </p>
           <div className="mt-4 flex gap-4 text-lg opacity-90">
             <a
@@ -114,6 +122,17 @@ export default function FooterTraditional() {
 
       <div className="text-center text-xs mt-12 opacity-70">
         © {new Date().getFullYear()} Mahira Herbals. All rights reserved.
+      </div>
+      <div className="text-center text-xs mt-2 opacity-70">
+        This website is made by{" "}
+        <a
+          href="https://mavericktechnovations.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-gold"
+        >
+          Maverick Technovation
+        </a>
       </div>
     </footer>
   );

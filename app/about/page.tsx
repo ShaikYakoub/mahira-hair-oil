@@ -19,64 +19,68 @@ export const metadata = {
 };
 
 const ingredientsList = [
-  { name: "Amla", desc: "Indian Gooseberry", img: "/images/amla.jpg" },
+  { name: "Amla", desc: "Indian Gooseberry", img: "/images/amla.webp" },
   {
     name: "Fenugreek",
     desc: "Golden seed for resilience",
-    img: "/images/fenugreek.jpg",
+    img: "/images/fenugreek.webp",
   },
-  { name: "Neem", desc: "Ancient scalp purifier", img: "/images/neem.jpg" },
+  { name: "Neem", desc: "Ancient scalp purifier", img: "/images/neem.webp" },
   {
     name: "Moringa",
     desc: "Drumstick leaves for strength",
-    img: "/images/Moringa.jpg",
+    img: "/images/Moringa.webp",
   },
   {
     name: "Aloe Vera",
     desc: "Cooling and hydrating balm",
-    img: "/images/aloe.jpg",
+    img: "/images/aloe.webp",
   },
   {
     name: "Jatamansi",
     desc: "Spikenard for calming",
-    img: "/images/Jatamansi.jpg",
+    img: "/images/Jatamansi.webp",
   },
   {
     name: "Bhringraj",
     desc: "King of herbs for hair",
-    img: "/images/bhringraj.jpg",
+    img: "/images/bhringraj.webp",
   },
   {
     name: "Rosemary",
     desc: "Stimulates hair follicles",
-    img: "/images/rosemary.jpg",
+    img: "/images/rosemary.webp",
   },
   {
     name: "Haritaki",
     desc: "Nourishes and protects",
-    img: "/images/Haritaki.jpg",
+    img: "/images/Haritaki.webp",
   },
-  { name: "Henna", desc: "Natural conditioning", img: "/images/Henna.jpg" },
-  { name: "Vetiver", desc: "Cooling root extract", img: "/images/Vetiver.jpg" },
+  { name: "Henna", desc: "Natural conditioning", img: "/images/Henna.webp" },
+  {
+    name: "Vetiver",
+    desc: "Cooling root extract",
+    img: "/images/Vetiver.webp",
+  },
   {
     name: "Flax Seeds",
     desc: "Rich in Omega-3",
-    img: "/images/flax-seeds.jpg",
+    img: "/images/flax-seeds.webp",
   },
   {
     name: "Almonds",
     desc: "Deep moisture and shine",
-    img: "/images/almonds.jpg",
+    img: "/images/almonds.webp",
   },
   {
     name: "Hibiscus",
     desc: "Flower of beauty and softness",
-    img: "/images/hibiscus.jpg",
+    img: "/images/hibiscus.webp",
   },
   {
     name: "Coconut & Castor",
     desc: "Nourishing base oils",
-    img: "/images/coconut.jpg",
+    img: "/images/coconut.webp",
   },
 ];
 
@@ -92,7 +96,7 @@ export default function AboutPage() {
             hair care to modern homes. Discover our story and values.
           </>
         }
-        rightImage="/images/story-roots-sprout.jpg"
+        rightImage="/images/story-roots-sprout.webp"
         rightAlt="Roots and Sprout - Mahira Story"
       >
         <a
@@ -133,7 +137,7 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto px-6 mt-12">
           <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden shadow-md">
             <Image
-              src="/images/story-mortar-pestle.jpg"
+              src="/images/story-mortar-pestle.webp"
               alt="Traditional Ayurvedic Preparation"
               fill
               className="object-cover"

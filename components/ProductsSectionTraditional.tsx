@@ -10,7 +10,7 @@ const featuredProducts = [
     price: 1199,
     discount: "20% OFF",
     offer: "🎁 FREE 200ml Regular Shampoo (Worth ₹399)",
-    img: "/images/hair-oil-500ml.png",
+    img: "/images/hair-oil-500ml.webp",
   },
   {
     id: "base-200",
@@ -20,7 +20,7 @@ const featuredProducts = [
     price: 479,
     discount: "20% OFF",
     offer: "🎁 FREE 100ml Regular Shampoo (Worth ₹199)",
-    img: "/images/hair-oil-200ml.png",
+    img: "/images/hair-oil-200ml.webp",
   },
   {
     id: "onion-oil",
@@ -30,7 +30,7 @@ const featuredProducts = [
     price: 399,
     discount: "20% OFF",
     offer: "Anti-Hairfall Formula",
-    img: "/images/onion-hair-oil.png",
+    img: "/images/onion-hair-oil.webp",
   },
   {
     id: "shampoo-regular",
@@ -40,7 +40,7 @@ const featuredProducts = [
     price: 359,
     discount: "10% OFF",
     offer: "Anti-Hairfall & Smooth-Silky",
-    img: "/images/shampoo-100ml.png",
+    img: "/images/shampoo-100ml.webp",
   },
 ];
 

@@ -32,11 +32,10 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <Link href="/">
             <Image
-              src="/images/logo.svg"
+              src="/images/logo.webp"
               alt="Mahira"
               width={72}
               height={52}
-              style={{ border: "4px solid #b6873c" }}
             />
           </Link>
           <span className="inline-block font-serif text-base md:text-xl text-brown font-bold tracking-wide select-none">
