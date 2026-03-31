@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
+import Script from "next/script";
 import ClientLayout from "@/components/ClientLayout";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import Navbar from "@/components/Navbar";
@@ -67,11 +68,36 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-    <head>
+      <head>
         <link rel="icon" type="image/png" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/favicon.png" />
       </head>
       <body className={`${playfair.variable} ${inter.variable}`}>
+        <Script
+          id="meta-pixel"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `!function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1075390860991345');
+            fbq('track', 'PageView');`,
+          }}
+        />
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=1075390860991345&ev=PageView&noscript=1"
+            alt="Meta Pixel"
+          />
+        </noscript>
         <Navbar />
         <ClientLayout>{children}</ClientLayout>
         <WhatsAppFloat />
