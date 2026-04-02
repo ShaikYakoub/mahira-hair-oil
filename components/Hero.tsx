@@ -32,15 +32,12 @@ export default function Hero({
 }: HeroProps) {
   return (
     <section className="relative py-16 md:py-24 overflow-hidden">
-      <div className="absolute inset-0 -z-20">
-        <Image
-          src={bgImage}
-          alt={bgAlt}
-          fill
-          priority
-          className="object-cover"
-        />
-      </div>
+      <img
+        src={bgImage}
+        alt={bgAlt}
+        fetchPriority="high"
+        className="absolute inset-0 w-full h-full object-cover -z-10"
+      />
 
       <div className="absolute inset-0 -z-10 bg-beige/90" />
 

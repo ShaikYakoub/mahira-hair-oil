@@ -338,7 +338,7 @@ export default function Home() {
                     <img
                       src={product.img}
                       alt={product.name}
-                      className="object-cover w-full h-full"
+                      className="object-cover object-center w-full h-full bg-white"
                       loading="lazy"
                     />
                     <div className="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-full shadow-sm">
