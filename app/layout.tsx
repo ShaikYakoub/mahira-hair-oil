@@ -2,10 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import ClientLayout from "@/components/ClientLayout";
-import dynamic from "next/dynamic";
-const WhatsAppFloat = dynamic(() => import("@/components/WhatsAppFloat"), {
-  ssr: false,
-});
+import WhatsAppFloatShell from "@/components/WhatsAppFloatShell";
 import Navbar from "@/components/Navbar";
 import { kadapaLocations } from "@/lib/locations";
 
@@ -77,7 +74,7 @@ export default function RootLayout({
       <body className={`${playfair.variable} ${inter.variable}`}>
         <Navbar />
         <ClientLayout>{children}</ClientLayout>
-        <WhatsAppFloat />
+        <WhatsAppFloatShell />
       </body>
     </html>
   );
