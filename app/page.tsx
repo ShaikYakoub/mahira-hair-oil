@@ -108,6 +108,7 @@ function TestimonialsSlider() {
               width={80}
               height={80}
               className="w-20 h-20 rounded-full border-2 border-gold/40 mb-4 object-cover"
+              loading="lazy"
             />
             <div className="text-brown text-lg md:text-xl text-center mb-4 italic">
               &ldquo;{t.text}&rdquo;
@@ -340,6 +341,7 @@ export default function Home() {
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                       className="object-cover"
+                      loading="lazy"
                     />
                     <div className="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-full shadow-sm">
                       {product.discount}
@@ -414,6 +416,7 @@ export default function Home() {
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover"
+                      loading="lazy"
                     />
                     <div className="absolute top-3 right-3 bg-brown text-white text-xs font-bold px-2 py-1 rounded-full shadow-sm">
                       {combo.tag}
@@ -460,6 +463,7 @@ export default function Home() {
               width={120}
               height={24}
               className="h-6 md:h-8"
+              loading="lazy"
             />
           </div>
           <p className="text-center text-lg md:text-xl font-serif italic text-brown mb-12 max-w-2xl mx-auto">

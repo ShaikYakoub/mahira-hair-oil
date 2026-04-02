@@ -348,6 +348,7 @@ export default function ProductsPage() {
                     alt={combo.name}
                     fill
                     className="object-cover"
+                    loading="lazy"
                   />
                 </div>
                 <div className="p-4 md:p-6 flex flex-col flex-grow">
@@ -401,6 +402,7 @@ export default function ProductsPage() {
                   alt={product.name}
                   fill
                   className="object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="flex-1">
