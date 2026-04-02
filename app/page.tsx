@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import IngredientsDoubleScroll from "@/components/IngredientsDoubleScroll";
 import Hero from "@/components/Hero";
 import TrustStrip from "@/components/TrustStrip";
@@ -102,7 +102,7 @@ function TestimonialsSlider() {
             className="bg-[#f9f3e7] border-2 border-gold/60 rounded-2xl shadow-gold/10 shadow-lg flex flex-col items-center p-4 font-serif w-full max-w-xs min-w-[70vw] sm:min-w-[220px] sm:max-w-[180px] md:min-w-[320px] md:max-w-[320px]"
             style={{ flex: "0 0 auto" }}
           >
-            <Image
+            <img
               src={t.img}
               alt={t.name}
               width={80}
@@ -335,12 +335,10 @@ export default function Home() {
                   className="bg-[#F8EFE3] border border-gold/30 rounded-2xl overflow-hidden shadow-md flex flex-col hover:shadow-xl transition-shadow duration-300"
                 >
                   <div className="relative w-full aspect-square bg-white border-b border-gold/20">
-                    <Image
+                    <img
                       src={product.img}
                       alt={product.name}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                      className="object-cover"
+                      className="object-cover w-full h-full"
                       loading="lazy"
                     />
                     <div className="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-full shadow-sm">
@@ -410,12 +408,10 @@ export default function Home() {
                   className="bg-[#F8EFE3] border border-gold/30 rounded-2xl overflow-hidden shadow-md flex flex-col hover:shadow-xl transition-shadow duration-300"
                 >
                   <div className="relative w-full aspect-[4/3] bg-white border-b border-gold/20">
-                    <Image
+                    <img
                       src={combo.img}
                       alt={combo.name}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-cover"
+                      className="object-cover w-full h-full"
                       loading="lazy"
                     />
                     <div className="absolute top-3 right-3 bg-brown text-white text-xs font-bold px-2 py-1 rounded-full shadow-sm">
@@ -457,7 +453,7 @@ export default function Home() {
             Product Usage Ritual
           </h2>
           <div className="flex justify-center mb-8">
-            <Image
+            <img
               src="/images/traditional-divider.svg"
               alt="divider"
               width={120}

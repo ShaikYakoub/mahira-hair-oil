@@ -68,6 +68,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="preload" as="image" href="/images/story-garden-hero.webp" />
         <link rel="icon" type="image/webp" href="/favicon.webp" />
         <link rel="apple-touch-icon" href="/favicon.webp" />
       </head>

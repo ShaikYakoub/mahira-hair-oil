@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+
 import Hero from "@/components/Hero";
 import IngredientsDoubleScroll from "@/components/IngredientsDoubleScroll";
 import FooterTraditional from "@/components/FooterTraditional";
@@ -343,11 +343,10 @@ export default function ProductsPage() {
                 className="bg-[#F8EFE3] border border-gold/30 rounded-2xl overflow-hidden shadow-md flex flex-col hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="relative w-full aspect-[4/3] bg-white border-b border-gold/20">
-                  <Image
+                  <img
                     src={combo.image}
                     alt={combo.name}
-                    fill
-                    className="object-cover"
+                    className="object-cover w-full h-full"
                     loading="lazy"
                   />
                 </div>
@@ -397,11 +396,10 @@ export default function ProductsPage() {
               className={`flex flex-col ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"} items-center gap-12`}
             >
               <div className="relative w-full md:w-1/2 aspect-[4/3] rounded-xl overflow-hidden shadow-md border border-[#d9c3ab] bg-white">
-                <Image
+                <img
                   src={product.image}
                   alt={product.name}
-                  fill
-                  className="object-cover"
+                  className="object-cover w-full h-full"
                   loading="lazy"
                 />
               </div>
